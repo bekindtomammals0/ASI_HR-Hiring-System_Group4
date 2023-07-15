@@ -1,9 +1,14 @@
 using Microsoft.AspNetCore;
+using NLog;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Basecode.Data;
 
 namespace Basecode.WebApp
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();            
@@ -14,7 +19,7 @@ namespace Basecode.WebApp
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .ConfigureAppConfiguration(SetUpConfiguration)
-                .UseStartup<Startup>();
+                .UseStartup<Startup1>();
 
         private static void SetUpConfiguration(WebHostBuilderContext builderCtx, IConfigurationBuilder config)
         {
