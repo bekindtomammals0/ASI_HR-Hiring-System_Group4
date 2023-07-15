@@ -7,11 +7,11 @@ using Basecode.Data.ViewModels;
 
 namespace Basecode.WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class JobOpeningController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<JobOpeningController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public JobOpeningController(ILogger<JobOpeningController> logger)
         {
             _logger = logger;
         }
