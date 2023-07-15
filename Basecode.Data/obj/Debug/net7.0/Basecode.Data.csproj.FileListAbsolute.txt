@@ -1,0 +1,12 @@
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.deps.json
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.dll
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.pdb
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.AssemblyReference.cache
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfoInputs.cache
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfo.cs
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.CoreCompileInputs.cache
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.dll
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\refint\Basecode.Data.dll
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.pdb
+D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\ref\Basecode.Data.dll
