@@ -3562,24 +3562,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Owner\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\m3lon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_03_Alliance\\testrepo\\ASI_BaseCodeCSharp-testrepo\\Basecode.Data\\Basecode.Data.csproj",
+      "projectUniqueName": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
       "projectName": "Basecode.Data",
-      "projectPath": "D:\\_03_Alliance\\testrepo\\ASI_BaseCodeCSharp-testrepo\\Basecode.Data\\Basecode.Data.csproj",
-      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "D:\\_03_Alliance\\testrepo\\ASI_BaseCodeCSharp-testrepo\\Basecode.Data\\obj\\",
+      "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+      "packagesPath": "C:\\Users\\m3lon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\m3lon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3658,7 +3653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
