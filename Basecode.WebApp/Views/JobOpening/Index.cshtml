@@ -1,0 +1,34 @@
+﻿@using Basecode.Data.ViewModels
+@model List<JobOpeningViewModel>
+
+<h2>Job Openings</h2>
+
+<p>
+    <a asp-action="AddView">Add</a>
+</p>
+
+<table class="table" style="@(Model.Count() == 0 ? "display : none":"")">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Employment Type</th>
+            <th>Experience Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var jobOpening in Model)
+        {
+            <tr>
+                <td>@jobOpening.Title</td>
+                <td>@jobOpening.Description</td>
+                <td>@jobOpening.EmploymentType</td>
+                <td>@jobOpening.ExperienceLevel</td>
+                <td>
+                    <a asp-action="UpdateView" asp-route-id="@jobOpening.Id">Update</a>
+                    <a asp-action="DeleteView" asp-route-id="@jobOpening.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

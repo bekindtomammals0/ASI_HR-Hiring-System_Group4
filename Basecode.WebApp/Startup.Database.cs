@@ -8,12 +8,23 @@ namespace Basecode.WebApp
     {
         private void ConfigureDatabase(IServiceCollection services)
         {
+            string server = Environment.GetEnvironmentVariable("DB_SERVER");
+            string database = Environment.GetEnvironmentVariable("DB_NAME");
+            string username = Environment.GetEnvironmentVariable("DB_USER");
+            string password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+            string connectionString = $"Server={server};Database={database};User Id={username};Password={password};Trusted_Connection=True;MultipleActiveResultSets=true";
+
+
             services.AddDbContext<BasecodeContext>(
             options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found."),
+                    connectionString, 
                     optionsAction => { }
                 )
+                // options.UseSqlServer(
+                //     Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found."),
+                //     optionsAction => { }
+                // )
             );
 
             services.AddIdentity<IdentityUser, IdentityRole>()
