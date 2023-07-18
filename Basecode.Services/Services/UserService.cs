@@ -26,7 +26,7 @@ namespace Basecode.Services.Services
             return _userRepository.FindById(id);
         }
 
-        public User FindUser(string userName)
+        public IdentityUser FindUser(string userName)
         {
             return _userRepository.FindUser(userName);
         }
@@ -51,7 +51,7 @@ namespace Basecode.Services.Services
             _userRepository.Delete(user);
         }
 
-        public Task<User> FindUserAsync(string userName, string password)
+        public Task<IdentityUser> FindUserAsync(string userName, string password)
         {
             return _userRepository.FindUserAsync(userName, password);
         }

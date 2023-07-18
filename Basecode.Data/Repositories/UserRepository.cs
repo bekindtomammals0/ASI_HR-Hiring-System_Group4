@@ -32,9 +32,9 @@ namespace Basecode.Data.Repositories
             return GetDbSet<User>().FirstOrDefault(x => x.Id.Equals(id));
         }
 
-        public User FindUser(string userName)
+        public IdentityUser FindUser(string userName)
         {
-            var userDB = GetDbSet<User>().Where(x => x.Username.ToLower().Equals(userName.ToLower())).AsNoTracking().FirstOrDefault();
+            var userDB = GetDbSet<IdentityUser>().Where(x => x.UserName.ToLower().Equals(userName.ToLower())).AsNoTracking().FirstOrDefault();
             return userDB;
         }
 
@@ -129,9 +129,9 @@ namespace Basecode.Data.Repositories
             return user;
         }
 
-        public async Task<User> FindUserAsync(string userName, string password)
+        public async Task<IdentityUser> FindUserAsync(string userName, string password)
         {
-            var userDB = GetDbSet<User>().Where(x => x.Username.ToLower().Equals(userName.ToLower())).AsNoTracking().FirstOrDefault();
+            var userDB = GetDbSet<IdentityUser>().Where(x => x.UserName.ToLower().Equals(userName.ToLower())).AsNoTracking().FirstOrDefault();
             var user = await _userManager.FindByNameAsync(userName);
             var isPasswordOK = await _userManager.CheckPasswordAsync(user, password);
             if ((user == null) || (isPasswordOK == false))
