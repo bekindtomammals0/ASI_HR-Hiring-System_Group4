@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[CV]
+(
+    [ID] INT NOT NULL PRIMARY KEY,
+    [file] VARBINARY(MAX) NOT NULL
+)
