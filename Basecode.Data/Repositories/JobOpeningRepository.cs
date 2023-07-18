@@ -23,27 +23,27 @@ namespace Basecode.Data.Repositories
 
         public void Add(JobOpening jobOpening)
         { 
-            _context.JobOpenings.Add(jobOpening);
+            _context.JobOpening.Add(jobOpening);
             _context.SaveChanges();
         }
 
         public JobOpening GetById(int id)
         {
-            return _context.JobOpenings.Find(id);
+            return _context.JobOpening.Find(id);
         }
 
         public void Update(JobOpening jobOpening) 
         {
-            _context.JobOpenings.Update(jobOpening);
+            _context.JobOpening.Update(jobOpening);
             _context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            var data = _context.JobOpenings.Find(id);
+            var data = _context.JobOpening.Find(id);
             if (data != null)
             {
-                _context.JobOpenings.Remove(data);
+                _context.JobOpening.Remove(data);
                 _context.SaveChanges();
             }
         }
