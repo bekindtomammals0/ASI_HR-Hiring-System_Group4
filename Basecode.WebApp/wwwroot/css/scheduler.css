@@ -8,7 +8,6 @@
 table {
     width: calc(100% - 100px);
     margin-left: 50px;
-    margin-bottom: 40px;
     border-collapse: collapse;
     text-align: center;
 }
