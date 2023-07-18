@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Basecode.WebApp.Controllers
 {
     [Authorize(AuthenticationSchemes = "Bearer", Roles = "User")]
+    [AllowAnonymous]
     public class JobOpeningController : Controller
     {
         private readonly IJobOpeningService _service;
