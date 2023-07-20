@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[JobOpening] (
     [employmentTypeID]  INT           NOT NULL,
     [experienceLevelID] INT           NOT NULL,
     [title]             CHAR (50)     NOT NULL,
-    [description]       VARCHAR (255) NULL,
+    [description]       VARCHAR (4000) NULL,
     [createdTime]       DATETIME      NOT NULL,
     [createdBy]         CHAR (50)     NOT NULL,
     [updatedTime]       DATETIME      NULL,
