@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Application Form";
+}
+
+<link rel="stylesheet" href="~/css/applicationForm.css">
+
+<div class="application-form-container">
+    <div class="application-form-header">
+        <h1>Job Application Form</h1>
+        <h5>IT Developer Position (Entry Level)</h5>
+    </div>
+    <div class="application-form-content">
+        <p>Applicant Personal Information</p>
+        <div class="divider">
+            <div class="column1">
+                <div class="input-field">
+                    <input type="text" required="required">
+                    <label>First Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" required="required">
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required="required">
+                    <label>Contact Number</label>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="input-field">
+                    <input type="text" required="required">
+                    <label>Last Name</label>
+                </div>
+                <div class="dropdown-field">
+                    <select id="civil-status" name="civil-status" required="required">
+                        <option value="" disabled selected hidden>Civil Status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Widowed</option>
+                        <option>Divorced</option>
+                    </select>
+                </div>
+                <div class="file-field">
+                    <input type="file" id="myFile" name="filename" required="required">
+                </div>
+                <button class="af-next-btn"><a class="nav-link text-white" asp-area="" asp-controller="ApplicationForm" asp-action="CharacterReference">Next</a></button>
+            </div>
+        </div>
+    </div>
+</div>
