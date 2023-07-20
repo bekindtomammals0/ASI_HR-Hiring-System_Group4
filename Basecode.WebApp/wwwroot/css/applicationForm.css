@@ -133,3 +133,11 @@ p {
     float: right;
     margin-top: 20px;
 }
+
+    .af-next-btn:hover {
+        background-color: #CE3A3A;
+    }
+
+    .af-next-btn:active {
+        background-color: #9F2020;
+    }
