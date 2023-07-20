@@ -28,3 +28,18 @@ C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug
 C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Data.pdb
 C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.csproj.CopyComplete
 C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\ref\Basecode.Services.dll
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Services.deps.json
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Services.dll
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Services.pdb
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Data.dll
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\bin\Debug\net7.0\Basecode.Data.pdb
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.csproj.AssemblyReference.cache
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.AssemblyInfoInputs.cache
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.AssemblyInfo.cs
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.csproj.CoreCompileInputs.cache
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.csproj.CopyComplete
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.dll
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\refint\Basecode.Services.dll
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\Basecode.Services.pdb
+C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Services\obj\Debug\net7.0\ref\Basecode.Services.dll

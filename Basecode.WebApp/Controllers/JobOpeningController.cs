@@ -1,4 +1,5 @@
 ﻿using Basecode.Data.Models;
+using Basecode.Data.ViewModels;
 using Basecode.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -58,6 +59,15 @@ namespace Basecode.WebApp.Controllers
         {
             _service.Delete(id);
             return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult PartialUpdate(int id)
+        {
+            JobOpeningViewModel jobOpeningViewModel = _service.GetById(id);
+            JobOpening jobOpening = new JobOpening { Title = jobOpeningViewModel.Title, Description = jobOpeningViewModel.Description
+                                                , ExperienceLevel = jobOpeningViewModel.ExperienceLevel, 
+                                                    EmploymentType = jobOpeningViewModel.EmploymentType};
+            return PartialView("UpdateView", jobOpening);
         }
     }
 }
