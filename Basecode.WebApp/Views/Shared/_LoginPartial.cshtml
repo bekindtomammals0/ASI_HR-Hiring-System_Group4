@@ -4,7 +4,7 @@
 @inject UserManager<IdentityUser> userManager
 
 <ul class="navbar-nav">
-@if (signInManager.IsSignedIn(User))
+@if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
 {
     <li class="nav-item">
         <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @userManager.GetUserName(User)!</a>
@@ -14,14 +14,34 @@
                 <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout @User.Identity.Name</button>
         </form>
     </li>
-}
-else
-{
     <li class="nav-item">
+        <a class="nav-link text-dark" id="register" asp-controller="AccountManager" asp-action="RegisterView">Register</a>
+        </li>
+    }
+    else if (signInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @userManager.GetUserName(User)!</a>
+        </li>
+        <li class="nav-item">
+            <form id="logoutForm" class="form-inline" method="post" asp-action="logout" asp-controller="AccountManager">
+                <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout @User.Identity.Name</button>
+            </form>
+        </li>
+    }
+    else
+{
+    @*<li class="nav-item">
             <a class="nav-link text-dark" id="register" asp-controller="AccountManager" asp-action="RegisterView">Register</a>
-    </li>
+    </li>*@
     <li class="nav-item">
             <a class="nav-link text-dark" id="login" asp-controller="AccountManager" asp-action="LoginView">Login</a>
     </li>
 }
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="CreateRole">Development: Create Role</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="EditUserRole">Development: Update User Roles</a>
+    </li>
 </ul>

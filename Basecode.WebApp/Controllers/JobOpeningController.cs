@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Basecode.WebApp.Controllers
 {
-    [AllowAnonymous]
+    
     public class JobOpeningController : Controller
     {
         private readonly IJobOpeningService _service;
@@ -27,6 +27,7 @@ namespace Basecode.WebApp.Controllers
         {
             return View();
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Add(JobOpening model)
         {
@@ -41,6 +42,7 @@ namespace Basecode.WebApp.Controllers
             var data = _service.GetById(id);
             return View(data);
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Update(JobOpening model)
         {
@@ -53,6 +55,7 @@ namespace Basecode.WebApp.Controllers
             var data = _service.GetById(id);
             return View(data);
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Delete(int id)
         {

@@ -14,7 +14,7 @@
         <!--Menu-->
             <div class="menu">
                 <div class="menu-section" style="height: 15%;">
-                @if (signInManager.IsSignedIn(User))
+                @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                 {
                     <button type="button" class="btn danger" data-bs-toggle="modal"
                             data-bs-target="#exampleModalCenter" style="height: 80%; width: 90%;">
@@ -114,7 +114,7 @@
                             <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
                                 <h3 class="header-text" style="font-weight: 700"></h3>
                                 <div style="padding-left: 77%;">
-                                    @if (signInManager.IsSignedIn(User))
+                                        @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                                     {
                                         <button style="border: 0px; background-color: white; margin-right: 10px;" onclick="ConfirmDelete(@jobOpening.Id)">
                                             <svg xmlns="http://www.w3.org/2000/svg"

@@ -40,8 +40,4 @@
     <ProjectReference Include="..\Basecode.Services\Basecode.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\AccountManager\" />
-  </ItemGroup>
-
 </Project>

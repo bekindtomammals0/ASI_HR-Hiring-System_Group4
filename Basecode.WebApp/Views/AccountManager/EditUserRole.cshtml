@@ -1,0 +1,48 @@
+﻿@using Basecode.Data.ViewModels;
+@model EditUserRoleViewModel
+
+<h1>Edit User Role</h1>
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post" asp-action="EditUserRole" asp-controller="AccountManager">
+                <h2>Edit User Role</h2>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                   
+                    <div>
+                        <label asp-for="User" class="form-label">User: </label>
+                    </div>
+                    <div>
+                        <select asp-for="User" asp-items="new SelectList(ViewBag.UserList)">
+                            <option>
+                                Please Select one
+                            </option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="form-floating mb-3">
+                    <div>
+                        <label asp-for="Role" class="form-label">Role: </label>
+                    </div>
+                    <div>
+                        <select asp-for="Role" asp-items="new SelectList(ViewBag.RoleList)">
+                            <option>
+                                Please Select one
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Reassign User</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
