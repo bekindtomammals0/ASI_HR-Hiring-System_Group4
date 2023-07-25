@@ -1,0 +1,248 @@
+﻿body {
+    background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-d-rendering-of-a-modern-office-interior-design-with-open-picture-image_2762160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(53, 53, 53, 0.75);
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+}
+
+h1, h5 {
+    color: white;
+}
+
+.character-reference-header {
+    text-align: center;
+    margin: 30px;
+}
+
+.character-reference-content {
+    width: 80%;
+    height: 515px;
+    max-width: 1050px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px 40px 10px 40px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+}
+
+    .input-field label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+    .input-field input:focus ~ label, .input-field input:valid ~ label {
+        padding-top: 8px;
+        padding-bottom: 5px;
+        top: 10px;
+        font-size: 10px;
+        color: #9D99AC;
+    }
+
+    .input-field input:focus {
+        border: 1px solid #ec5d5d;
+    }
+
+    .input-field input {
+        width: 340px;
+        height: 100%;
+        background: #F1F1F1;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 0 15px 0 15px;
+        border-radius: 5px;
+    }
+
+.cf-buttons {
+    float: right;
+    margin-top: 110px;
+    margin-right: 120px;
+}
+
+.cf-back-btn {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ec5d5d;
+    border-radius: 5px;
+    color: #ec5d5d;
+}
+
+    .cf-back-btn:hover {
+        background-color: #F6F5FF;
+    }
+
+    .cf-back-btn:active {
+        background-color: #F6F5FF;
+        border: none;
+    }
+
+.cf-submit-btn {
+    width: 200px;
+    height: 40px;
+    background-color: #EC5D5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+    .cf-submit-btn:hover {
+        background-color: #CE3A3A;
+    }
+
+    .cf-submit-btn:active {
+        background-color: #9F2020;
+    }
+
+.nav-link.text {
+    color: #ec5d5d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 665px;
+    height: 350px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.details {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close {
+    color: #ec5d5d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #CE3A3A;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close:active {
+        color: #9F2020;
+    }
+
+.message1 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.message2 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.message2 span {
+    color: #ec5d5d;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.modal-buttons #cancel-btn {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ec5d5d;
+    color: #ec5d5d;
+    border-radius: 5px;
+}
+
+    .modal-buttons #cancel-btn:hover {
+        background-color: #F6F5FF;
+    }
+
+    .modal-buttons #cancel-btn:active {
+        background-color: #F6F5FF;
+        border: none;
+    }
+
+.modal-buttons #submit-btn {
+    width: 200px;
+    height: 40px;
+    background-color: #ec5d5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+    .modal-buttons #submit-btn:hover {
+        background-color: #CE3A3A;
+    }
+
+    .modal-buttons #submit-btn:active {
+        background-color: #9F2020;
+    }
