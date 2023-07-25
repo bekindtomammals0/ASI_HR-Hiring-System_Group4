@@ -409,3 +409,14 @@ Basecode.Services/obj/Basecode.Services.csproj.nuget.g.props
 Basecode.Services/obj/Basecode.Services.csproj.nuget.g.targets
 Basecode.Services/obj/project.assets.json
 Basecode.Services/obj/project.nuget.cache
+Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
+Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
+Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
+Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
+Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.FileListAbsolute.txt
+Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
+Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
+Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll
+Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
+Basecode.Services/obj/Debug/net7.0/Basecode.Services.csproj.CoreCompileInputs.cache
+Basecode.Services/obj/Debug/net7.0/Basecode.Services.csproj.FileListAbsolute.txt
