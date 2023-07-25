@@ -397,3 +397,15 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 /Basecode.WebApp/Properties/launchSettings.json
+
+# Brian's Device
+Basecode.Data/obj/Basecode.Data.csproj.nuget.dgspec.json
+Basecode.Data/obj/Basecode.Data.csproj.nuget.g.props
+Basecode.Data/obj/Basecode.Data.csproj.nuget.g.targets
+Basecode.Data/obj/project.assets.json
+Basecode.Data/obj/project.nuget.cache
+Basecode.Services/obj/Basecode.Services.csproj.nuget.dgspec.json
+Basecode.Services/obj/Basecode.Services.csproj.nuget.g.props
+Basecode.Services/obj/Basecode.Services.csproj.nuget.g.targets
+Basecode.Services/obj/project.assets.json
+Basecode.Services/obj/project.nuget.cache
