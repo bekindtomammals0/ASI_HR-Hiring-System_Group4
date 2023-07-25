@@ -17,6 +17,9 @@
     <li class="nav-item">
         <a class="nav-link text-dark" id="register" asp-controller="AccountManager" asp-action="RegisterView">Register</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="ListOfUsers">List of Users</a>
+        </li>
     }
     else if (signInManager.IsSignedIn(User))
     {
@@ -39,9 +42,10 @@
     </li>
 }
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="CreateRole">Development: Create Role</a>
+        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="CreateRole">//Dev: Create Role</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="EditUserRole">Development: Update User Roles</a>
+        <a class="nav-link text-dark" asp-controller="AccountManager" asp-action="EditUserRole">//Dev: Update User Roles</a>
     </li>
+    
 </ul>

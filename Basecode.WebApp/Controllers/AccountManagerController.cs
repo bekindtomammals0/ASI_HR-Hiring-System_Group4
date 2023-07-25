@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Data;
 using static Basecode.Data.Constants;
 
 namespace Basecode.WebApp.Controllers
@@ -79,7 +80,7 @@ namespace Basecode.WebApp.Controllers
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(userToRegister, "User");
-                    await signInManager.SignInAsync(userToRegister, isPersistent: false);
+                    //await signInManager.SignInAsync(userToRegister, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }
 
@@ -130,6 +131,57 @@ namespace Basecode.WebApp.Controllers
             ViewBag.UserList = userList;
             ViewBag.RoleList = roleList;
             return View(editUserRoleViewModel);
+        }
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ManageUser(ManageUserViewModel manageUserViewModel)
+        {
+            var user = await userManager.FindByIdAsync(manageUserViewModel.Id);
+            List<string> rolesToRemove = new List<string>();
+            var roleList = new List<string>();
+            foreach (var role in roleManager.Roles)
+            {
+                var name = role.Name;
+                roleList.Add(name);
+            }
+            ViewBag.RoleList = roleList;
+            if (user != null)
+            {
+                user.UserName = manageUserViewModel.UserName;
+                user.Email = manageUserViewModel.Email;
+                await userManager.UpdateAsync(user);
+                foreach (var roleToRemove in roleManager.Roles)
+                {
+                    rolesToRemove.Add(roleToRemove.Name);
+                }
+                for (int i = 0; i < rolesToRemove.Count; i++)
+                {
+                    await userManager.RemoveFromRoleAsync(user, rolesToRemove[i]);
+                }
+                await userManager.AddToRoleAsync(user, manageUserViewModel.Role);
+                await userManager.RemovePasswordAsync(user);
+                await userManager.AddPasswordAsync(user, manageUserViewModel.Password);
+                ManageUserViewModel model2 = new ManageUserViewModel
+                {
+                    Id = user.Id,
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    Role = manageUserViewModel.Role
+                };
+                return View(model2);
+            }
+            return View(manageUserViewModel);
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string Id)
+        {
+            var user = await userManager.FindByIdAsync(Id);
+            if(user != null)
+            {
+                await userManager.DeleteAsync(user);
+            }
+            return RedirectToAction("ListOfUsers");
         }
         //Page redirect methods
         [HttpPost]
@@ -190,6 +242,52 @@ namespace Basecode.WebApp.Controllers
         [HttpGet]
         public IActionResult CreateRole()
         {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult ListOfUsers()
+        {
+            var roleList = new List<string>();
+
+            foreach (var role in roleManager.Roles)
+            {
+                var name = role.Name;
+                roleList.Add(name);
+            }
+
+            ViewBag.RoleList = roleList;
+            return View();
+        }
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> ManageUser(string id)
+        {
+            ManageUserViewModel model = new ManageUserViewModel();
+
+            var user = await userManager.FindByIdAsync(id);
+
+            model.Id = user.Id;
+            model.UserName = user.UserName;
+            model.Email = user.Email;
+            ViewBag.UserNamePlaceHolder = user.UserName;
+            var roleList = new List<string>();
+
+            foreach (var role in roleManager.Roles)
+            {
+                var name = role.Name;
+                roleList.Add(name);
+            }
+
+            ViewBag.RoleList = roleList;
+            return View(model);
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> DeleteView(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            ViewBag.id = id;
+            ViewBag.user = user.UserName;
             return View();
         }
     }
