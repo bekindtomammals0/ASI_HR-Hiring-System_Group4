@@ -59,7 +59,7 @@ namespace Basecode.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("JobOpenings");
+                    b.ToTable("JobOpening");
                 });
 
             modelBuilder.Entity("Basecode.Data.Models.RefreshToken", b =>

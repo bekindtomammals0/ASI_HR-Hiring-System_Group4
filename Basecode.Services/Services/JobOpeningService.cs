@@ -3,6 +3,7 @@ using Basecode.Data.Interfaces;
 using Basecode.Data.Models;
 using Basecode.Data.ViewModels;
 using Basecode.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using System.Linq;
 
 namespace Basecode.Services.Services
@@ -32,8 +33,6 @@ namespace Basecode.Services.Services
 
         public void Add(JobOpening jobOpening)
         {
-            jobOpening.CreatedBy = System.Environment.UserName;
-            jobOpening.UpdatedBy = System.Environment.UserName;
             jobOpening.CreatedTime = DateTime.Now;
             jobOpening.UpdatedTime = DateTime.Now;
             _repository.Add(jobOpening);
