@@ -1,36 +1,48 @@
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.deps.json
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.dll
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\bin\Debug\net7.0\Basecode.Data.pdb
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.AssemblyReference.cache
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfoInputs.cache
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfo.cs
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.CoreCompileInputs.cache
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.dll
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\refint\Basecode.Data.dll
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\Basecode.Data.pdb
-D:\_03_Alliance\testrepo\ASI_BaseCodeCSharp-testrepo\Basecode.Data\obj\Debug\net7.0\ref\Basecode.Data.dll
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.AssemblyReference.cache
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfoInputs.cache
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfo.cs
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.CoreCompileInputs.cache
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.dll
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\refint\Basecode.Data.dll
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.pdb
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.deps.json
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.dll
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.pdb
-C:\Users\m3lon\Downloads\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\ref\Basecode.Data.dll
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.deps.json
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.dll
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\bin\Debug\net7.0\Basecode.Data.pdb
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.AssemblyReference.cache
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfoInputs.cache
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.AssemblyInfo.cs
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.csproj.CoreCompileInputs.cache
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.dll
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\refint\Basecode.Data.dll
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\Basecode.Data.pdb
-C:\Users\Temp Admin\Documents\000 Programming Projects\Test MVC\ASI_HR-Hiring-System_Group4\Basecode.Data\obj\Debug\net7.0\ref\Basecode.Data.dll
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.AssemblyReference.cache
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfoInputs.cache
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfo.cs
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
+D:/_03_Alliance/testrepo/ASI_BaseCodeCSharp-testrepo/Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.AssemblyReference.cache
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfoInputs.cache
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfo.cs
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
+C:/Users/m3lon/Downloads/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.AssemblyReference.cache
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfoInputs.cache
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfo.cs
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
+C:/Users/Temp Admin/Documents/000 Programming Projects/Test MVC/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.AssemblyReference.cache
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfoInputs.cache
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.AssemblyInfo.cs
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
+/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll

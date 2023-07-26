@@ -8444,31 +8444,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Temp Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/bekindtomammals0/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+      "projectUniqueName": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/Basecode.Data.csproj",
       "projectName": "Basecode.Data",
-      "projectPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
-      "packagesPath": "C:\\Users\\Temp Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
+      "projectPath": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/Basecode.Data.csproj",
+      "packagesPath": "/Users/bekindtomammals0/.nuget/packages/",
+      "outputPath": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Temp Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/bekindtomammals0/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8544,7 +8537,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
       }
     }
   }
