@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/Basecode.WebApp/Properties/launchSettings.json
+
+# Brian's Device
+/Basecode.Data/obj/
+/Basecode.Data/bin/
+/Basecode.Services/obj/
+/Basecode.Services/bin/
