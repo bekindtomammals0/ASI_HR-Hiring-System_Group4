@@ -4,6 +4,6 @@ namespace Basecode.Data.Interfaces
 {
     public interface IExperienceLevelRepository
     {
-        IQueryable<ExperienceLevel> RetrieveAll();
+        IEnumerable<ExperienceLevel> RetrieveAll();
     }
 }

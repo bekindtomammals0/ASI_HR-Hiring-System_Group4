@@ -11,7 +11,7 @@ namespace Basecode.Data.Repositories
         {
             _context = context;
         }
-        public IQueryable<EmploymentType> RetrieveAll()
+        public IEnumerable<EmploymentType> RetrieveAll()
         {
             return this.GetDbSet<EmploymentType>();
         }

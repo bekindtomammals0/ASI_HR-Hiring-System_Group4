@@ -11,7 +11,7 @@ namespace Basecode.Data.Repositories
         {
             _context = context;
         }
-        public IQueryable<ExperienceLevel> RetrieveAll()
+        public IEnumerable<ExperienceLevel> RetrieveAll()
         {
             return this.GetDbSet<ExperienceLevel>();
         }

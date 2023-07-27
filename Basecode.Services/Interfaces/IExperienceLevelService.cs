@@ -6,7 +6,7 @@ namespace Basecode.Services.Interfaces
 {
     public interface IExperienceLevelService
     {
-        List<ExperienceLevel> RetrieveAll();
+        List<ExperienceLevel> GetAllExperienceLevels();
 
     }
 }

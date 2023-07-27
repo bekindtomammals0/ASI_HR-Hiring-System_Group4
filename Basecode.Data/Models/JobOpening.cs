@@ -17,5 +17,7 @@ namespace Basecode.Data.Models
         public DateTime? UpdatedTime { get; set;}
         public string? CreatedBy { get; set; }
         public string? UpdatedBy { get; set;}
+        public EmploymentType EmploymentType { get; set; }
+        public ExperienceLevel ExperienceLevel { get; set; }
     }
 }

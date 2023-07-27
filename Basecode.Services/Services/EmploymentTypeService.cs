@@ -12,7 +12,7 @@ namespace Basecode.Services.Services
             _repository = repository;
         }
 
-        public List<EmploymentType> RetrieveAll()
+        public List<EmploymentType> GetAllEmploymentTypes()
         {
             var data = _repository.RetrieveAll().ToList();
             return data;

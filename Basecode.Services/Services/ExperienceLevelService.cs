@@ -13,7 +13,7 @@ namespace Basecode.Services.Services
             _repository = repository;
         }
 
-        public List<ExperienceLevel> RetrieveAll()
+        public List<ExperienceLevel> GetAllExperienceLevels()
         {
             var data = _repository.RetrieveAll().ToList();
             return data;
