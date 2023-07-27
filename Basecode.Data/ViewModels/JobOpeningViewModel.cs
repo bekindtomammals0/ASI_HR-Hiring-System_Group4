@@ -15,7 +15,7 @@ namespace Basecode.Data.ViewModels
         /// <summary>
         /// Gets or sets the ID of the Job Opening.
         /// </summary>
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the Employment Type ID associated with the Job Opening.

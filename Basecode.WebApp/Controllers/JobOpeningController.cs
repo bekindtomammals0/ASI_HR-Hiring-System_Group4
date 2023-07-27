@@ -67,8 +67,8 @@ namespace Basecode.WebApp.Controllers
         {
             JobOpeningViewModel jobOpeningViewModel = _service.GetById(id);
             JobOpening jobOpening = new JobOpening { Title = jobOpeningViewModel.Title, Description = jobOpeningViewModel.Description
-                                                , ExperienceLevel = jobOpeningViewModel.ExperienceLevel, 
-                                                    EmploymentType = jobOpeningViewModel.EmploymentType};
+                                                , ExperienceLevelID = jobOpeningViewModel.ExperienceLevelID, 
+                                                    EmploymentTypeID = jobOpeningViewModel.EmploymentTypeID};
             return PartialView("UpdateView", jobOpening);
         }
     }
