@@ -8444,24 +8444,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/bekindtomammals0/.nuget/packages/": {}
+    "C:\\Users\\m3lon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/Basecode.Data.csproj",
+      "projectUniqueName": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
       "projectName": "Basecode.Data",
-      "projectPath": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/Basecode.Data.csproj",
-      "packagesPath": "/Users/bekindtomammals0/.nuget/packages/",
-      "outputPath": "/Users/bekindtomammals0/Documents/Projects/ASI_HR-Hiring-System_Group4/Basecode.Data/obj/",
+      "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+      "packagesPath": "C:\\Users\\m3lon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/bekindtomammals0/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\m3lon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8537,7 +8539,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

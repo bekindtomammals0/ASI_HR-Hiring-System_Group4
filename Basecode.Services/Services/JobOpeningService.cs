@@ -22,11 +22,11 @@ namespace Basecode.Services.Services
         {
             var data = _repository.RetrieveAll().Select(s => new JobOpeningViewModel
             {
-                Id = s.Id,
+                ID = s.ID,
                 Title = s.Title,
                 Description = s.Description,
-                EmploymentType = s.EmploymentType,
-                ExperienceLevel = s.ExperienceLevel,
+                EmploymentTypeID = s.EmploymentTypeID,
+                ExperienceLevelID = s.ExperienceLevelID,
             }).ToList();
             return data;
         }
@@ -46,11 +46,11 @@ namespace Basecode.Services.Services
 
         public void Update(JobOpening jobOpening)
         {
-            var job = _repository.GetById(jobOpening.Id);
+            var job = _repository.GetById(jobOpening.ID);
             job.Title = jobOpening.Title;
             job.Description = jobOpening.Description;
-            job.EmploymentType = jobOpening.EmploymentType;
-            job.ExperienceLevel = jobOpening.ExperienceLevel;
+            job.EmploymentTypeID = jobOpening.EmploymentTypeID;
+            job.ExperienceLevelID = jobOpening.ExperienceLevelID;
             job.UpdatedBy = System.Environment.UserName;
             job.UpdatedTime = DateTime.Now;
             _repository.Update(job);
