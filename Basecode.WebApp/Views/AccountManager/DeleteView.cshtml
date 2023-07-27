@@ -1,0 +1,11 @@
+﻿@using Basecode.Data.ViewModels;
+@model DeleteUserViewModel;
+
+<h1>Are you sure you want to delete this user?</h1>
+<p>@ViewBag.user</p>
+
+<form asp-action="DeleteUser">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="ListOfUsers">Back to List</a>
+</form>

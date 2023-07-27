@@ -1,0 +1,35 @@
+﻿@using Basecode.Data.ViewModels;
+@model ManageUserViewModel;
+
+<h1>Manage User:</h1>
+
+<p>Id: @Model.Id</p>
+<p>UserName: @Model.UserName</p>
+<p>Email: @Model.Email</p>
+
+<form method="post">
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" placeholder="new user name" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" placeholder="New Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" placeholder="New Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" placeholder="Confirm New Password" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div>
+        <select asp-for="Role" asp-items="new SelectList(ViewBag.RoleList)"></select>
+    </div>
+    <button type="submit">Update User</button>
+</form>

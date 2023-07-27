@@ -399,24 +399,7 @@ FodyWeavers.xsd
 /Basecode.WebApp/Properties/launchSettings.json
 
 # Brian's Device
-Basecode.Data/obj/Basecode.Data.csproj.nuget.dgspec.json
-Basecode.Data/obj/Basecode.Data.csproj.nuget.g.props
-Basecode.Data/obj/Basecode.Data.csproj.nuget.g.targets
-Basecode.Data/obj/project.assets.json
-Basecode.Data/obj/project.nuget.cache
-Basecode.Services/obj/Basecode.Services.csproj.nuget.dgspec.json
-Basecode.Services/obj/Basecode.Services.csproj.nuget.g.props
-Basecode.Services/obj/Basecode.Services.csproj.nuget.g.targets
-Basecode.Services/obj/project.assets.json
-Basecode.Services/obj/project.nuget.cache
-Basecode.Data/bin/Debug/net7.0/Basecode.Data.deps.json
-Basecode.Data/bin/Debug/net7.0/Basecode.Data.dll
-Basecode.Data/bin/Debug/net7.0/Basecode.Data.pdb
-Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.CoreCompileInputs.cache
-Basecode.Data/obj/Debug/net7.0/Basecode.Data.csproj.FileListAbsolute.txt
-Basecode.Data/obj/Debug/net7.0/Basecode.Data.dll
-Basecode.Data/obj/Debug/net7.0/Basecode.Data.pdb
-Basecode.Data/obj/Debug/net7.0/ref/Basecode.Data.dll
-Basecode.Data/obj/Debug/net7.0/refint/Basecode.Data.dll
-Basecode.Services/obj/Debug/net7.0/Basecode.Services.csproj.CoreCompileInputs.cache
-Basecode.Services/obj/Debug/net7.0/Basecode.Services.csproj.FileListAbsolute.txt
+/Basecode.Data/obj/
+/Basecode.Data/bin/
+/Basecode.Services/obj/
+/Basecode.Services/bin/
