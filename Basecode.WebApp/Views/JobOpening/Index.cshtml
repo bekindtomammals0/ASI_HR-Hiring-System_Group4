@@ -1,5 +1,5 @@
 ﻿@using Basecode.Data.Models;
-﻿@using Basecode.Data.ViewModels
+@using Basecode.Data.ViewModels
 @model List<JobOpeningViewModel>
 @inject SignInManager<IdentityUser> signInManager;
 
@@ -32,7 +32,7 @@
                 }
                 else
                 {
-                    <button type="button" class="btn btn-warning"
+                    <button type="button" class="btn danger"
                             style="height: 80%; width: 90%;">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              width="20"
