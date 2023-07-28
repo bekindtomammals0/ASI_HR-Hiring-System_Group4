@@ -16,11 +16,9 @@ namespace Basecode.Services.Services
         private readonly IExperienceLevelRepository _ELrepository;
 
         private readonly IMapper _mapper;
-        public JobOpeningService(IJobOpeningRepository repository, IEmploymentTypeRepository ETrepository, IExperienceLevelRepository ELrepository, IMapper mapper)
+        public JobOpeningService(IJobOpeningRepository repository, IMapper mapper)
         {
             _JOrepository = repository;
-            _ELrepository = ELrepository;
-            _ETrepository = ETrepository;
             _mapper = mapper;
         }
 
@@ -36,14 +34,14 @@ namespace Basecode.Services.Services
             }).ToList();
             return data;
         }
-        public List<ExperienceLevel> GetAllExperienceLevels()
-        {
-           return _ELrepository.RetrieveAll().ToList();
-        }
-        public List<EmploymentType> GetAllEmploymentTypes()
-        {
-            return _ETrepository.RetrieveAll().ToList();
-        }
+        // public List<ExperienceLevel> GetAllExperienceLevels()
+        // {
+        //    return _ELrepository.RetrieveAll().ToList();
+        // }
+        // public List<EmploymentType> GetAllEmploymentTypes()
+        // {
+        //     return _ETrepository.RetrieveAll().ToList();
+        // }
         public void Add(JobOpening jobOpening)
         {
             jobOpening.CreatedTime = DateTime.Now;

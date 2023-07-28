@@ -11,22 +11,24 @@ namespace Basecode.WebApp.Controllers
     public class JobOpeningController : Controller
     {
         private readonly IJobOpeningService _service;
+        private readonly ILookUpService _lookUpService;
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
-        public JobOpeningController(IJobOpeningService service) 
+        public JobOpeningController(IJobOpeningService service, ILookUpService lookUpService) 
         { 
             _service = service;
+            _lookUpService = lookUpService;
         }
 
-        public IActionResult Create()
-        {
-            var viewModel = new JobOpeningViewModel
-            {
-                EmploymentTypes = _service.GetAllEmploymentTypes(),
-                ExperienceLevels = _service.GetAllExperienceLevels()
-            };  
-            return View(viewModel);
-        }
+        // public IActionResult Create()
+        // {
+        //     // var viewModel = new JobOpeningViewModel
+        //     // {
+        //     //     EmploymentTypes = _service.GetAllEmploymentTypes(),
+        //     //     ExperienceLevels = _service.GetAllExperienceLevels()
+        //     // };  
+        //     // return View(viewModel);
+        // }
         [AllowAnonymous]
         public IActionResult Index()
         {
