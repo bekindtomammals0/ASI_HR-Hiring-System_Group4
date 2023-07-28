@@ -4,10 +4,7 @@
 name: .NET
 
 on:
-  push:
-    branches:
-      - master
-      - dev   # Add the 'dev' branch here
+  push:   # No specific branches mentioned to run on any branch
   pull_request:
     branches:
       - master
