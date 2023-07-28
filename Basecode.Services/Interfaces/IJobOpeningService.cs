@@ -11,6 +11,8 @@ namespace Basecode.Services.Interfaces
     public interface IJobOpeningService
     {
         List<JobOpeningViewModel> RetrieveAll();
+        List<ExperienceLevel> GetAllExperienceLevels();
+        List<EmploymentType> GetAllEmploymentTypes();
         void Add(JobOpening jobOpening);
         JobOpeningViewModel GetById(int id);
         void Update(JobOpening jobOpening);

@@ -25,7 +25,6 @@ namespace Basecode.Data.Repositories
                 var result = await _roleManager.CreateAsync(role);
                 return result;
             }
-
             return null;
         }
     }
