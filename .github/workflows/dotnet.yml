@@ -5,9 +5,13 @@ name: .NET
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
+      - dev   # Add the 'dev' branch here
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
+      - dev   # Add the 'dev' branch here
 
 jobs:
   build:
@@ -19,7 +23,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x  # Use .NET 7 instead of 6.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
