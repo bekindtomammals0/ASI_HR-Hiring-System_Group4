@@ -18,13 +18,13 @@ namespace Basecode.WebApp.Controllers
             _service = service;
         }
 
-        public IActionResult Populate()
+        public IActionResult Create()
         {
             var viewModel = new JobOpeningViewModel
-                {
-                    EmploymentTypes = _service.GetAllEmploymentTypes(),
-                    ExperienceLevels = _service.GetAllExperienceLevels()
-                };  
+            {
+                EmploymentTypes = _service.GetAllEmploymentTypes(),
+                ExperienceLevels = _service.GetAllExperienceLevels()
+            };  
             return View(viewModel);
         }
         [AllowAnonymous]

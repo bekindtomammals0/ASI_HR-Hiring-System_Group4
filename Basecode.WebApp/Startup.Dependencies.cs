@@ -23,7 +23,7 @@ namespace Basecode.WebApp
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IJobOpeningRepository, JobOpeningRepository>();
             services.AddScoped<IEmploymentTypeRepository, EmploymentTypeRepository>();
-            services.AddScoped<IExperienceLevelRepository, IExperienceLevelRepository>();
+            services.AddScoped<IExperienceLevelRepository, ExperienceLevelRepository>();
             
 
         }
