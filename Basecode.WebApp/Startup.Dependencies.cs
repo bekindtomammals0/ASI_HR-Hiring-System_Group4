@@ -18,12 +18,14 @@ namespace Basecode.WebApp
             // Services 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IJobOpeningService, JobOpeningService>();
+            services.AddScoped<IEmploymentTypeService, EmploymentTypeService>();
+            services.AddScoped<IExperienceLevelService, ExperienceLevelService>();
             
             // Repositories
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IJobOpeningRepository, JobOpeningRepository>();
             services.AddScoped<IEmploymentTypeRepository, EmploymentTypeRepository>();
-            services.AddScoped<IExperienceLevelRepository, IExperienceLevelRepository>();
+            services.AddScoped<IExperienceLevelRepository, ExperienceLevelRepository>();
             
 
         }
