@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "User Management";
+}
+
+<link rel="stylesheet" href="~/css/userManagement.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="main-container">
+    <div class="sidebar">
+        <header>
+            <img src="https://asi-ees.com/pos_article/2018-q4/images/logo-asi.png" alt="alliance-logo"/>
+        </header>
+        <ul>
+            <li><a asp-area="" asp-controller="Admin" asp-action="CreateRole">Create New Account</a></li>
+            <li><a asp-area="" asp-controller="UserManagement" asp-action="Index">User Management</a></li>
+            <li><a id="logout" asp-area="" asp-controller="Home" asp-action="Index">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="user-table">
+            <table>
+                <tr>
+                    <th>Surname / First Name</th>
+                    <th>User Type</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>HR</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>HR</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>HR</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>HR</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Applicant</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John 13</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+                <tr>
+                    <td>Doe, John</td>
+                    <td>Admin</td>
+                    <td>email@site.com</td>
+                    <td><i class="fa-solid fa-pen edit-btn"></i></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button id="prev-btn"><i class="fa-solid fa-arrow-left"></i>Previous</button>
+            <span id="page-info"></span>
+            <button id="next-btn">Next<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div> 
+</div>
+
+<div id="modal-screen" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p class="details">Edit User Details</p>
+            <p class="close">&times;</p>
+        </div>
+        <div class="modal-buttons">
+            <button id="edit-user"><i class="fa-solid fa-user-pen"></i>Edit User Data</button>
+            <button id="reset-password"><i class="fa-solid fa-pen"></i>Reset Password</button>
+            <button id="remove-user"><i class="fa-solid fa-trash"></i>Remove User</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/userManagement.js"></script>
