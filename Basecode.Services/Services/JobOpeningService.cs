@@ -28,7 +28,7 @@ namespace Basecode.Services.Services
         {
             var data = _JOrepository.RetrieveAll().Select(s => new JobOpeningViewModel
             {
-                ID = s.ID,
+                Id = s.Id,
                 Title = s.Title,
                 Description = s.Description,
                 EmploymentTypeID = s.EmploymentTypeID,
