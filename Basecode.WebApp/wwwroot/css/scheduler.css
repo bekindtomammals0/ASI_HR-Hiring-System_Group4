@@ -120,9 +120,8 @@ input {
 
 .modal {
     display: none;
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -132,91 +131,56 @@ input {
     background-color: rgba(0,0,0,0.4);
 }
 
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .modal-content {
     background-color: #fefefe;
-    margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 470px;
-    height: 575px;
-    border-radius: 10px;
-}
-
-.details {
-    font-size: 28px;
-    font-weight: bold;
-    padding-top: 0px;
-}
-
-.close {
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-.input-field {
-    position: relative;
-    width: 90%;
-    height: 50px;
-    margin: 30px 0;
-    margin-left: calc(100% - 388px);
-}
-
-.input-field label {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 16px;
-    font-weight: 500;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-    .input-field input:focus ~ label, .input-field input:valid ~ label {
-        top: 2px;
-        font-size: 10px;
-    }
-
-    .input-field input {
-        width: 90%;
-        height: 100%;
-        background: #F1F1F1;
-        border: none;
-        outline: none;
-        font-size: 14px;
-        font-weight: normal;
-        padding: 0 10px 0 10px;
-        border-radius: 5px;
-    }
-
-.dropdown-field {
-    position: relative;
-    width: 90%;
-    height: 50px;
-    margin: 30px 0px;
-    margin-left: calc(100% - 388px);
-}
-
-.dropdown-field select {
-    width: 90%;
+    width: 360px;
     height: 100%;
-    background: #F1F1F1;
+    border-radius: 10px 0 0 10px;
+    float: right;
+}
+
+.modal-header {
+    margin-left: 20px !important;
+    margin-top: 50px !important;
+}
+
+#applicant-name-label, #applicant-job-label {
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#applicant-name, #applicant-job {
+    margin-left: 40px;
+}
+
+.applicant-shortlist {
+    /* position: relative; */
+    margin-top: 280px;
+}
+
+#shortlist, #return {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#shortlist-btn {
+    display: block;
+    width: 210px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #EC5D5D;
+    color: white;
     border: none;
-    outline: none;
-    padding: 0 35px 0 10px;
+    font-size: 16px;
     border-radius: 5px;
+}
+
+#return {
+    color: #ec5d5d;
 }
