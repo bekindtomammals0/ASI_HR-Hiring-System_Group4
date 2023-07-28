@@ -1,4 +1,5 @@
-﻿﻿@using Basecode.Data.ViewModels;
+﻿@using Basecode.Data.ViewModels;
+@model LoginViewModel;
 @{
     ViewData["Title"] = "Login";
 }
@@ -11,25 +12,25 @@
         <p id="work">Work with us.</p>
     </div>
 
-    <div class="wrapper" style="margin-right: 4rem;">
-        <div class="login-form">
-            <h1>Welcome to Alliance</h1>
+    <div class="wrapper" style="margin-right: 4rem; height: fit-content; padding: 10px;">
+        <div class="login-form" style="padding: 0px; padding-left: 40px; padding-right: 40px;">
+            <h1 style="margin-top: 30px; margin-bottom: 30px;">Welcome to Alliance</h1>
             <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
+                <div class="form-floating mb-3">
+                    <input class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
+                    <label >Email</label>
+                    <span class="text-danger"></span>
                 </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
+                <div class="form-floating mb-3">
+                    <input class="form-control" autocomplete="password" aria-required="true" placeholder="password" />
+                    <label >Password</label>
+                    <span class="text-danger"></span>
                 </div>
-                <div class="remember-forgot">
+                <div class="remember-forgot" style="margin-top: 1rem;">
                     <label><input type="checkbox">Remember Me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="login-btn">Login</button>
+                <button type="submit" class="login-btn" style="margin-top: 30px; margin-bottom: 30px;">Login</button>
             </form>
         </div>
     </div>

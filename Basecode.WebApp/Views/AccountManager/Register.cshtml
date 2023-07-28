@@ -13,8 +13,8 @@
     </div>
 
     <div class="wrapper" style="margin-right: 4rem; height: fit-content; padding: 10px;">
-        <div class="login-form">
-            <h1>Join Alliance</h1>
+        <div class="login-form" style="padding: 0px; padding-left: 40px; padding-right: 40px;">
+            <h1 style="margin-top: 30px; margin-bottom: 30px;">Join Alliance</h1>
             <form action="#">
             <div class="form-floating mb-3">
                 <input asp-for="UserName" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
@@ -36,9 +36,9 @@
                 <label asp-for="ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
-            <button id="registerSubmit" type="submit" class="login-btn">Register</button>
-        </form>
-    </div>
+            <button id="registerSubmit" type="submit" class="login-btn" style="margin-top: 30px; margin-bottom: 30px;">Register</button>
+            </form>
+        </div>
     <div >
         <section>
             <hr />
