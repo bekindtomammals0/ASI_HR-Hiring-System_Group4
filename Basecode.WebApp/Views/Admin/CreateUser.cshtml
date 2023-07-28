@@ -1,3 +1,7 @@
+@using Basecode.Data.Models
+@using Basecode.Data.ViewModels
+@model UserViewModel
+
 <div style="padding: 0px;">
 
     <div class="main">
@@ -19,7 +23,7 @@
                 </div>
             </div>
       
-        <!--Job List-->
+        <!--Create User Form-->
         <div class="content">
             <div class="modal-dialog modal-dialog-centered" style="max-width: 100%; width: 60%;">
               <div class="modal-content" style="height: 80%; border: 0px;">
@@ -30,24 +34,31 @@
                       <form asp-action="Add" style="display: grid; grid-auto-flow: row;">
                           <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                           <div class="form-group" style="margin-bottom: 1rem;">
-                              <input type="text" class="form-control" placeholder="Email"
+                              <input asp-for="UserName" type="text" class="form-control" placeholder="Username"
                                      style="height: 3rem; background-color: #F7F7FD; border: 0px;">
-                              <span class="text-danger"></span>
+                              <span asp-validation-for="UserName" class="text-danger"></span>
                           </div>
                           <div class="form-group" style="margin-bottom: 1rem;">
-                              <input type="password" class="form-control" placeholder="Password"
+                              <input asp-for="Password" type="password" class="form-control" placeholder="Password"
                                      style="height: 3rem; background-color: #F7F7FD; border: 0px;">
-                              <span class="text-danger"></span>
+                              <span asp-validation-for="Password" class="text-danger"></span>
                           </div>
                           <div class="form-group" style="margin-bottom: 1rem;">
-                              <input type="text" class="form-control" placeholder="First Name"
+                              <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password"
                                      style="height: 3rem; background-color: #F7F7FD; border: 0px;">
-                              <span  class="text-danger"></span>
+                              <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                           </div>
                           <div class="form-group" style="margin-bottom: 1rem;">
-                              <input type="text" class="form-control" placeholder="Last Name"
+                              <input asp-for="FirstName" type="text" class="form-control" placeholder="First Name"
                                      style="height: 3rem; background-color: #F7F7FD; border: 0px;">
-                              <span class="text-danger"></span>
+                          </div>
+                          <div class="form-group" style="margin-bottom: 1rem;">
+                              <input asp-for="LastName" type="text" class="form-control" placeholder="Last Name"
+                                     style="height: 3rem; background-color: #F7F7FD; border: 0px;">
+                          </div>
+                          <div class="form-group" style="margin-bottom: 1rem;">
+                              <input asp-for="Email" type="text" class="form-control" placeholder="Email"
+                                     style="height: 3rem; background-color: #F7F7FD; border: 0px;">
                           </div>
                           <div class="form-group" style="margin-bottom: 1rem;">
                               <div class="btn-group" style="width: 100%; background-color: #F7F7FD;">
