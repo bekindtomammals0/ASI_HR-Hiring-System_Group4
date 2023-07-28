@@ -1,37 +1,21 @@
-let infoLinkElements = document.querySelectorAll(".info-pagination-list .info-link");
-let statusLinkElements = document.querySelectorAll(".status-pagination-list .status-link");
-
-let infoTableRows = document.querySelectorAll("#applicant-info tr:not(:first-child)");
-let statusTableRows = document.querySelectorAll("#applicant-status tr:not(:first-child)");
-
-let infoTotalPageCount = Math.ceil(infoTableRows.length / 5);
+let infoLinkElements = document.querySelectorAll(
+    ".info-pagination-list .info-link"
+);
+let infoTableRows = document.querySelectorAll(
+    "#applicant-info tr:not(:first-child)"
+);
+let infoTotalPageCount = Math.ceil(infoTableRows.length / 10);
 let infoCurrentPage = 1;
 
-let statusTotalPageCount = Math.ceil(statusTableRows.length / 5);
-let statusCurrentPage = 1;
-
 function showInfoRows(page) {
-    let startIndex = (page - 1) * 5;
-    let endIndex = startIndex + 5;
+    let startIndex = (page - 1) * 10;
+    let endIndex = startIndex + 10;
 
     for (let i = 0; i < infoTableRows.length; i++) {
         if (i >= startIndex && i < endIndex) {
             infoTableRows[i].style.display = "table-row";
         } else {
             infoTableRows[i].style.display = "none";
-        }
-    }
-}
-
-function showStatusRows(page) {
-    let startIndex = (page - 1) * 5;
-    let endIndex = startIndex + 5;
-
-    for (let i = 0; i < statusTableRows.length; i++) {
-        if (i >= startIndex && i < endIndex) {
-            statusTableRows[i].style.display = "table-row";
-        } else {
-            statusTableRows[i].style.display = "none";
         }
     }
 }
@@ -46,31 +30,11 @@ function setInfoActiveLink() {
     }
 }
 
-function setStatusActiveLink() {
-    let clickedValue = parseInt(event.target.getAttribute("value"));
-
-    if (clickedValue !== statusCurrentPage) {
-        statusCurrentPage = clickedValue;
-        showStatusRows(statusCurrentPage);
-        updateStatusActiveLink();
-    }
-}
-
 function updateInfoActiveLink() {
     for (let element of infoLinkElements) {
         element.classList.remove("active");
 
         if (parseInt(element.getAttribute("value")) === infoCurrentPage) {
-            element.classList.add("active");
-        }
-    }
-}
-
-function updateStatusActiveLink() {
-    for (let element of statusLinkElements) {
-        element.classList.remove("active");
-
-        if (parseInt(element.getAttribute("value")) === statusCurrentPage) {
             element.classList.add("active");
         }
     }
@@ -92,24 +56,9 @@ function infoNextBtn() {
     }
 }
 
-function statusPrevBtn() {
-    if (statusCurrentPage > 1) {
-        statusCurrentPage--;
-        showStatusRows(statusCurrentPage);
-        updateStatusActiveLink();
-    }
-}
-
-function statusNextBtn() {
-    if (statusCurrentPage < statusTotalPageCount) {
-        statusCurrentPage++;
-        showStatusRows(statusCurrentPage);
-        updateStatusActiveLink();
-    }
-}
+document.getElementById("info-prev-btn").addEventListener("click", infoPrevBtn);
+document.getElementById("info-next-btn").addEventListener("click", infoNextBtn);
 
 // Initial setup
 showInfoRows(infoCurrentPage);
-showStatusRows(statusCurrentPage);
 updateInfoActiveLink();
-updateStatusActiveLink();
