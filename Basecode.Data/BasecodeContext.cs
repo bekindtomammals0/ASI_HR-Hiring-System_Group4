@@ -28,5 +28,6 @@ namespace Basecode.Data
         public virtual DbSet<ExperienceLevel> ExperienceLevel {get; set; }
         public virtual DbSet<EmploymentType> EmploymentType { get; set; }   
         public virtual DbSet<RefreshToken> RefreshToken { get; set; }
+        public virtual DbSet<CharacterReference> CharacterReference { get; set; }
     }
 }
