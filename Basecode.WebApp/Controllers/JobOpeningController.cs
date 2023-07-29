@@ -17,16 +17,6 @@ namespace Basecode.WebApp.Controllers
         { 
             _service = service;
         }
-
-        public IActionResult Populate()
-        {
-            var viewModel = new JobOpeningViewModel
-                {
-                    EmploymentTypes = _service.GetAllEmploymentTypes(),
-                    ExperienceLevels = _service.GetAllExperienceLevels()
-                };  
-            return View(viewModel);
-        }
         [AllowAnonymous]
         public IActionResult Index()
         {

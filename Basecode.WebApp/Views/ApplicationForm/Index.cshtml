@@ -33,11 +33,7 @@
                 </div>
                 <div class="dropdown-field">
                     <select id="civil-status" name="civil-status" required="required">
-                        <option value="" disabled selected hidden>Civil Status</option>
-                        <option>Single</option>
-                        <option>Married</option>
-                        <option>Widowed</option>
-                        <option>Divorced</option>
+                        @Html.DropDownList("civil-status",new SelectList(ViewBag.CivilStatus, "civilStatusId","status"))
                     </select>
                 </div>
                 <div class="file-field">
