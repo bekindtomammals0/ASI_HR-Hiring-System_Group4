@@ -207,7 +207,8 @@ namespace Basecode.WebApp.Controllers
             return View(loginViewModel);
         }
         [HttpGet]
-        public IActionResult RegisterView()
+        [AllowAnonymous]
+        public IActionResult Register()
         {
             return View("Register");
         }
