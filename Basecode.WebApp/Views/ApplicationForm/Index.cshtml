@@ -32,9 +32,7 @@
                     <label>Last Name</label>
                 </div>
                 <div class="dropdown-field">
-                    <select id="civil-status" name="civil-status" required="required">
-                        @Html.DropDownList("civil-status",new SelectList(ViewBag.CivilStatus, "civilStatusId","status"))
-                    </select>
+                    @Html.DropDownList("civil-status",new SelectList(ViewBag.CivilStatus, "civilStatusId","Select civil status"))
                 </div>
                 <div class="file-field">
                     <input type="file" id="myFile" name="filename" required="required">
