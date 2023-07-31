@@ -5,8 +5,9 @@ namespace Basecode.Services.Interfaces
 {
     public interface ILookupService
     {
-        List<ExperienceLevel> GetExperienceLevels();
-        List<EmploymentType> GetEmploymentTypes();
         List<CivilStatus> GetCivilStatuses();
+        List<EmploymentType> GetEmploymentTypes();
+        List<ExperienceLevel> GetExperienceLevels();
+        List<ProcessStatus> GetProcessStatuses();
     }
 }
