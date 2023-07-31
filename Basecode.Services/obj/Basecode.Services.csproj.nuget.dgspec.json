@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj": {}
+    "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
+    "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
         "projectName": "Basecode.Data",
-        "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\m3lon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
+        "projectPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\Temp Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\m3lon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Temp Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,21 +101,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj": {
+    "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj",
         "projectName": "Basecode.Services",
-        "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj",
-        "packagesPath": "C:\\Users\\m3lon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\obj\\",
+        "projectPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\Basecode.Services.csproj",
+        "packagesPath": "C:\\Users\\Temp Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\m3lon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Temp Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -125,8 +133,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
-                "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj"
+              "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
+                "projectPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj"
               }
             }
           }
@@ -170,7 +178,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

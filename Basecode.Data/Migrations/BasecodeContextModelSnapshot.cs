@@ -22,6 +22,40 @@ namespace Basecode.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Basecode.Data.Models.EmploymentType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmploymentType");
+                });
+
+            modelBuilder.Entity("Basecode.Data.Models.ExperienceLevel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ExperienceLevel");
+                });
+
             modelBuilder.Entity("Basecode.Data.Models.JobOpening", b =>
                 {
                     b.Property<int>("Id")
@@ -39,13 +73,11 @@ namespace Basecode.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmploymentType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("EmploymentTypeID")
+                        .HasColumnType("int");
 
-                    b.Property<string>("ExperienceLevel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ExperienceLevelID")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -58,6 +90,10 @@ namespace Basecode.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmploymentTypeID");
+
+                    b.HasIndex("ExperienceLevelID");
 
                     b.ToTable("JobOpening");
                 });
@@ -329,6 +365,25 @@ namespace Basecode.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Basecode.Data.Models.JobOpening", b =>
+                {
+                    b.HasOne("Basecode.Data.Models.EmploymentType", "EmploymentType")
+                        .WithMany()
+                        .HasForeignKey("EmploymentTypeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Basecode.Data.Models.ExperienceLevel", "ExperienceLevel")
+                        .WithMany()
+                        .HasForeignKey("ExperienceLevelID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EmploymentType");
+
+                    b.Navigation("ExperienceLevel");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

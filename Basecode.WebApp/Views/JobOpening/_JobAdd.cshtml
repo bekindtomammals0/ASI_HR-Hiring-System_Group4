@@ -26,25 +26,25 @@
                         <input asp-for="Description"type="text" class="form-control" id="job-department">
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
+                    @*<div class="form-group">
                         <label for="experience-level" class="col-form-label">Experience Level:</label>
 <!-- <<<<<<< frontend/admin-create-user -->
                         <input asp-for="ExperienceLevelID" type="text" class="form-control" id="experience-level">
                         <span asp-validation-for="ExperienceLevelID" class="text-danger"></span>
-                    </div>
+                    </div>*@
                     <div class="form-group">
-                        <label for="job-requirements" class="col-form-label">Employment Type:</label>
-                        <textarea asp-for="EmploymentTypeID" class="form-control" id="job-requirements"></textarea>
+                        <label for="job-requirements" class="col-form-label">Experience Level:</label>
+                        @*<textarea asp-for="EmploymentTypeID" class="form-control" id="job-requirements"></textarea>*@
                         <span asp-validation-for="EmploymentTypeID" class="text-danger"></span>
 <!-- ======= -->
-                        @Html.DropDownListFor(m => m.ExperienceLevelID, new SelectList(Model.ExperienceLevels, "Id", "Name"), "Select Employment Type")
+                        @Html.DropDownListFor(m => m.ExperienceLevelID, new SelectList(Model.ExperienceLevels, "Id", "Level"), "Select Experience Level")
 
                         @* <input asp-for="ExperienceLevelID" type="text" class="form-control" id="experience-level">
                         <span asp-validation-for="ExperienceLevelID" class="text-danger"></span> *@
                     </div>
                     <div class="form-group">
                         <label for="job-requirements" class="col-form-label">Employment Type:</label>
-                        @Html.DropDownListFor(m => m.EmploymentTypeID, new SelectList(Model.EmploymentTypes, "Id", "Name"), "Select Employment Type")
+                        @Html.DropDownListFor(m => m.EmploymentTypeID, new SelectList(Model.EmploymentTypes, "Id", "Type"), "Select Employment Type")
 
                         @* <textarea asp-for="EmploymentType" class="form-control" id="job-requirements"></textarea>
                         <span asp-validation-for="EmploymentType" class="text-danger"></span> *@
