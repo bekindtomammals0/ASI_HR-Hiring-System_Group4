@@ -40,19 +40,5 @@ namespace Basecode.Services.Services
             return data;
         }
 
-        public void Update(CV cv)
-        {
-            var ceevee = _repository.GetById(cv.Id);
-
-            ceevee.Id = cv.Id;
-            ceevee.File = cv.File;
-
-            _repository.Update(ceevee);
-        }
-
-        public void Delete(int id)
-        {
-            _repository.Delete(id);
-        }
     }
 }
