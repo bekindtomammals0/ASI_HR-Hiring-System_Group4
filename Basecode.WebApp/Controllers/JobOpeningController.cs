@@ -4,6 +4,7 @@ using Basecode.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Specialized;
 
 namespace Basecode.WebApp.Controllers
 {
@@ -22,6 +23,19 @@ namespace Basecode.WebApp.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+            NameValueCollection ExpPairs = new System.Collections.Specialized.NameValueCollection();
+            foreach (var pair in _lookupService.GetExperienceLevels())
+            {
+                ExpPairs.Add("" + pair.Id, pair.Level);
+            }
+            ViewBag.ExpPairs = ExpPairs;
+            NameValueCollection EmpPairs = new System.Collections.Specialized.NameValueCollection();
+            foreach (var pair in _lookupService.GetEmploymentTypes())
+            {
+                ExpPairs.Add("" + pair.Id, pair.Type);
+            }
+            ViewBag.ExpPairs = ExpPairs;
+            ViewBag.EmpPairs = EmpPairs;
             ViewBag.ExperienceLevels = _lookupService.GetExperienceLevels();
             ViewBag.EmploymentTypes = _lookupService.GetEmploymentTypes();
             var data = _service.RetrieveAll();
