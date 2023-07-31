@@ -19,6 +19,10 @@ namespace Basecode.Data.Repositories
         {
             return this.GetDbSet<ExperienceLevel>();
         }
+        public IEnumerable<ProcessStatus> GetProcessStatuses()
+        {
+            return this.GetDbSet<ProcessStatus>();
+        }
         public IEnumerable<CivilStatus> GetCivilStatuses()
         {
             return this.GetDbSet<CivilStatus>();
