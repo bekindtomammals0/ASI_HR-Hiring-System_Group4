@@ -55,6 +55,12 @@ namespace Basecode.WebApp.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
+        public IActionResult Apply(int id)
+        {
+            var data = _service.GetById(id);
+            return View(data);
+        }
+        [HttpGet]
         public IActionResult UpdateView(int id)
         {
             var data = _service.GetById(id);
