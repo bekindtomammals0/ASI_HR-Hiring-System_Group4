@@ -35,7 +35,7 @@
                     <div class="form-group">
                         <label for="job-requirements" class="col-form-label">Experience Level:</label>
                         @*<textarea asp-for="EmploymentTypeID" class="form-control" id="job-requirements"></textarea>*@
-                        <span asp-validation-for="EmploymentTypeID" class="text-danger"></span>
+                        <span asp-validation-for="ExperienceLevelID" class="text-danger"></span>
 <!-- ======= -->
                         @Html.DropDownListFor(m => m.ExperienceLevelID, new SelectList(Model.ExperienceLevels, "Id", "Level"), "Select Experience Level")
 
