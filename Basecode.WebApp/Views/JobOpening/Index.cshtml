@@ -47,7 +47,7 @@
                     </button>
                 }
                     
-                @Html.Partial("_JobAdd", new JobOpeningViewModel())
+                @Html.Partial("_JobAdd", new JobOpeningViewModel(@ViewBag.EmploymentTypes, @ViewBag.ExperienceLevels))
                 </div>
                 <div class="menu-section">
                     <h5 style="margin-bottom: 1.5rem; font-weight: bold;">Filter By Department</h5>
