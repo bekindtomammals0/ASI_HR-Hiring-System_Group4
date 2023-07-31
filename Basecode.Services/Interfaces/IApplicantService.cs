@@ -13,7 +13,6 @@ namespace Basecode.Services.Interfaces
         List<Applicant> RetrieveAll();
         void Add(Applicant applicant);
         Applicant GetById(int id);
-        void Update(Applicant applicant);
         void Delete(int id);
     }
 }
