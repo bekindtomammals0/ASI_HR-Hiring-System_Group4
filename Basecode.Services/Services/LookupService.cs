@@ -12,18 +12,22 @@ namespace Basecode.Services.Services
         {
             _repository = repository;
         }
-
-        public List<ExperienceLevel> GetExperienceLevels()
+        public List<CivilStatus> GetCivilStatuses()
         {
-            return _repository.GetExperienceLevels().ToList();
+            return _repository.GetCivilStatuses().ToList();
         }
         public List<EmploymentType> GetEmploymentTypes()
         {
             return _repository.GetEmploymentTypes().ToList();
         }
-        public List<CivilStatus> GetCivilStatuses()
+        public List<ExperienceLevel> GetExperienceLevels()
         {
-            return _repository.GetCivilStatuses().ToList();
+            return _repository.GetExperienceLevels().ToList();
         }
+        public List<ProcessStatus> GetProcessStatuses()
+        {
+            return _repository.GetProcessStatuses().ToList();
+        }
+
     }
 }
