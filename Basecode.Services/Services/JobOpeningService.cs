@@ -12,15 +12,11 @@ namespace Basecode.Services.Services
     public class JobOpeningService : IJobOpeningService
     {
         private readonly IJobOpeningRepository _JOrepository;
-        private readonly IEmploymentTypeRepository _ETrepository;
-        private readonly IExperienceLevelRepository _ELrepository;
 
         private readonly IMapper _mapper;
-        public JobOpeningService(IJobOpeningRepository repository, IEmploymentTypeRepository ETrepository, IExperienceLevelRepository ELrepository, IMapper mapper)
+        public JobOpeningService(IJobOpeningRepository repository, IMapper mapper)
         {
             _JOrepository = repository;
-            _ELrepository = ELrepository;
-            _ETrepository = ETrepository;
             _mapper = mapper;
         }
 
@@ -35,14 +31,6 @@ namespace Basecode.Services.Services
                 ExperienceLevelID = s.ExperienceLevelID,
             }).ToList();
             return data;
-        }
-        public List<ExperienceLevel> GetAllExperienceLevels()
-        {
-           return _ELrepository.RetrieveAll().ToList();
-        }
-        public List<EmploymentType> GetAllEmploymentTypes()
-        {
-            return _ETrepository.RetrieveAll().ToList();
         }
         public void Add(JobOpening jobOpening)
         {
