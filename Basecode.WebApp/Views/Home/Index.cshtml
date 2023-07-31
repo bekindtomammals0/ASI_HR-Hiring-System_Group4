@@ -1,283 +1,163 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
 
+<link rel="stylesheet" href="~/css/home.css">
+
 <div class="background-tint"
-    style="padding: 0px; background-position: -250px -280px; background-image: url('https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1920/s3/img0mdgetufz');">
+  style="padding: 0px; background-position: -250px -280px; background-image: url('https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1920/s3/img0mdgetufz');">
 
-    <div class="main">
-        <!--Job List-->
-        <div class="content">
-            <ul class="joblist">
-                <li>
-                    <div class="joblist-item">
-                        <div style="display: grid; grid-auto-flow: column;">
-                          <h3 class="header-text" style="font-weight: 700">Sample Job</h3>
-                          <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
-                        </div>
-                        <p style="color: #8C8C8C; font-size: 14px;">Sample Department</p>
-                        <div style="background-color: #D9D9D9;
-                                    border-radius: 10px;
-                                    width: 150px;
-                                    height: fit-content;
-                                    padding: 2px;
-                                    text-align: center;
-                                    margin-bottom: 1rem;">
-                          <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
-                        </div>
-                        <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since                             the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five                                     centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of                           Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of                           Lorem Ipsum.
-                        </p>
-                        <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
-                          <h3 class="header-text" style="font-weight: 700"></h3>
-                          <div style="padding-left: 50%;">
-                            <button type="button"
-                                    class="btn danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                    style="height: fit-content; width: 90%; padding: 5px;">
-                                Apply
-                            </button>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="joblist-item">
-                        <div style="display: grid; grid-auto-flow: column;">
-                          <h3 class="header-text" style="font-weight: 700">Sample Job</h3>
-                          <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
-                        </div>
-                        <p style="color: #8C8C8C; font-size: 14px;">Sample Department</p>
-                        <div style="background-color: #D9D9D9;
-                                    border-radius: 10px;
-                                    width: 150px;
-                                    height: fit-content;
-                                    padding: 2px;
-                                    text-align: center;
-                                    margin-bottom: 1rem;">
-                          <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
-                        </div>
-                        <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since                             the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five                                     centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of                           Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of                           Lorem Ipsum.
-                        </p>
-                        <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
-                          <h3 class="header-text" style="font-weight: 700"></h3>
-                          <div style="padding-left: 50%;">
-                            <button type="button"
-                                    class="btn danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModalCenter"
-                                    style="height: fit-content; width: 90%; padding: 5px;">
-                                Apply
-                            </button>
-                          </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <!--Delete Modal-->
-            <div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Delete Job Opening</h5>
-                            <button type="button" class="close" style="border: 0px; background-color: white;"
-                                data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Are you sure you want to delete this Job Opening?
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#" class="btn btn-default" onclick="HideModal()">Cancel</a>
-                            <a href="#" class="btn btn-success" onclick="Delete()">Confirm</a>
-                        </div>
-                    </div>
-                </div>
+  <div class="main">
+    <!--Job List-->
+    <div class="content">
+      <ul class="joblist">
+        <li>
+          <div class="joblist-item">
+            <div style="display: grid; grid-auto-flow: column;">
+              <h3 class="header-text" style="font-weight: 700">Sample Job</h3>
+              <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
             </div>
+            <p style="color: #8C8C8C; font-size: 14px;">Sample Department</p>
+            <div style="background-color: #D9D9D9;
+                                    border-radius: 10px;
+                                    width: 150px;
+                                    height: fit-content;
+                                    padding: 2px;
+                                    text-align: center;
+                                    margin-bottom: 1rem;">
+              <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
+            </div>
+            <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
+              <h3 class="header-text" style="font-weight: 700"></h3>
+              <div style="padding-left: 50%;">
+                <button type="button" class="btn danger2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+                  style="height: fit-content; width: 90%; padding: 5px;">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="joblist-item">
+            <div style="display: grid; grid-auto-flow: column;">
+              <h3 class="header-text" style="font-weight: 700">Sample Job</h3>
+              <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
+            </div>
+            <p style="color: #8C8C8C; font-size: 14px;">Sample Department</p>
+            <div style="background-color: #D9D9D9;
+                                    border-radius: 10px;
+                                    width: 150px;
+                                    height: fit-content;
+                                    padding: 2px;
+                                    text-align: center;
+                                    margin-bottom: 1rem;">
+              <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
+            </div>
+            <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
+              <h3 class="header-text" style="font-weight: 700"></h3>
+              <div style="padding-left: 50%;">
+                <button type="button" class="btn danger2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+                  style="height: fit-content; width: 90%; padding: 5px;">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!--Delete Modal-->
+      <div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Delete Job Opening</h5>
+              <button type="button" class="close" style="border: 0px; background-color: white;" data-bs-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to delete this Job Opening?
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-default" onclick="HideModal()">Cancel</a>
+              <a href="#" class="btn btn-success" onclick="Delete()">Confirm</a>
+            </div>
+          </div>
         </div>
-        
-        <!--Menu-->
-        <div class="menu">
-                <div class="menu-section" style="height: 10%; margin-top: 20px; border: 0px;">
-                  <h4 class="header-text" style="margin-left: 25%; font-weight: 700;">Schedule</h4>
-                </div>
-                <div class="menu-section">
-                  <div style="display: grid; grid-auto-flow: column;">
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 1</p>
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00001</p>
-                  </div>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; "><em>For Technical Interview</em></font></p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
-                </div>
-                <div class="menu-section">
-                  <div style="display: grid; grid-auto-flow: column;">
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 2</p>
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00002</p>
-                  </div>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; "><em>For Technical Interview</em></font></p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
-                </div>
-                <div class="menu-section">
-                  <div style="display: grid; grid-auto-flow: column;">
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 7</p>
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00007</p>
-                  </div>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; "><em>For Technical Interview</em></font></p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
-                </div>
-                <div class="menu-section">
-                  <div style="display: grid; grid-auto-flow: column;">
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 15</p>
-                    <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00015</p>
-                  </div>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; "><em>For Technical Interview</em></font></p>
-                  <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
-                </div>
-            </div>
+      </div>
     </div>
+
+    <!--Menu-->
+    <div class="menu">
+      <div class="menu-section" style="height: 10%; margin-top: 20px; border: 0px;">
+        <h4 class="header-text" style="margin-left: 25%; font-weight: 700;">Schedule</h4>
+      </div>
+      <div class="menu-section">
+        <div style="display: grid; grid-auto-flow: column;">
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 1</p>
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00001</p>
+        </div>
+        <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; ">
+            <em>For Technical Interview</em></font>
+        </p>
+        <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
+      </div>
+      <div class="menu-section">
+        <div style="display: grid; grid-auto-flow: column;">
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 2</p>
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00002</p>
+        </div>
+        <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; ">
+            <em>For Technical Interview</em></font>
+        </p>
+        <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
+      </div>
+      <div class="menu-section">
+        <div style="display: grid; grid-auto-flow: column;">
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 7</p>
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00007</p>
+        </div>
+        <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; ">
+            <em>For Technical Interview</em></font>
+        </p>
+        <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
+      </div>
+      <div class="menu-section">
+        <div style="display: grid; grid-auto-flow: column;">
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px;">Applicant No. 15</p>
+          <p style="font-weight: bold; margin-bottom: 0px; font-size: 14px; margin-left: 50%;">00015</p>
+        </div>
+        <p style="margin-bottom: 0px; font-size: 14px;">Interview Date: August 18, 2023</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Mode of Interview: Virtual</p>
+        <p style="margin-bottom: 0px; font-size: 14px;">Status: <font style="margin-bottom: 0px; color: #EC5D5D; ">
+            <em>For Technical Interview</em></font>
+        </p>
+        <p style="margin-bottom: 0px; font-size: 14px;">_______________________________________</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-<style>
-    @@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-    html, body, html * {
-      font-family: 'Roboto', sans-serif;
-    }
-    
-    .header-text {
-        margin-bottom: 0px;
-        height: 40px;
-        font-weight: 500;
-    }
-  
-    .joblist {
-        overflow: hidden;
-        overflow-y: scroll;
-        list-style-type: none;
-        height: 628px;
-        padding-left: 0px;
-        border-radius: 15px;
-    }
-
-    .joblist::-webkit-scrollbar {
-        width: 0px;
-        background: transparent;
-    }
-
-    .joblist-item {
-        width: 95%;
-        height: 350px;
-        border: 1px solid rgb(180, 180, 180);
-        background-color: white;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 5px 5px rgba(53, 53, 53, 0.5);
-    }
-
-    .main {
-        display: grid;
-        gap: 20px;
-        grid-auto-flow: column;
-        height: 700px;
-    }
-
-    .background-tint {
-        background-color: rgba(41, 45, 50, 0.85);
-        background-blend-mode: overlay;
-    }
-
-    .content {
-        display: grid;
-        grid-auto-flow: row;
-        gap: 5px;
-        width: 1000px;
-        height: 93%;
-        margin-top: 40px;
-        margin-left: 5%;
-    }
-
-    .menu {
-        width: 400px;
-        height: 90%;
-        border: 1px solid rgb(180, 180, 180);
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-        margin-top: 40px;
-        margin-right: 5%;
-    }
-
-    .menu-section {
-        width: 100%;
-        height: 20%;
-        padding: 10px;
-        padding-left: 10%;
-    }
-    
-    .btn {
-        border: 2px solid #EC5D5D;
-        background-color: white;
-        color: black;
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-     }
-     
-     .danger {
-        background: #EC5D5D;
-        color: white;
-     }
-  
-     .danger:hover {
-        border-color: #CE3A3A;
-        background: #CE3A3A;
-        color: white;
-     }
-  
-     form {
-        color: #555;
-        display: flex;
-        padding: 2px;
-        border-radius: 5px;
-        margin: 0 0 30px;
-     }
-  
-     input[type="search"] {
-        border: none;
-        background: transparent;
-        margin: 0;
-        padding: 7px 8px;
-        font-size: 14px;
-        color: inherit;
-        border-radius: inherit;
-     }
-
-     input[type="search"]::placeholder {
-        color: #bbb;
-     }
-  
-     form.nosubmit {
-        border: none;
-        padding: 0;
-        width: 100%;
-     }
-
-     input.nosubmit {
-        border: 1px solid #555;
-        width: 100%;
-        padding: 9px 4px 9px 40px;
-        background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-        background-color: white;
-     }
-</style>
