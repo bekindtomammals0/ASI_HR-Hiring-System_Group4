@@ -13,7 +13,5 @@ namespace Basecode.Services.Interfaces
         List<CV> RetrieveAll();
         void Add(CV cv);
         CV GetById(int id);
-        void Update(CV cv);
-        void Delete(int id);
     }
 }
