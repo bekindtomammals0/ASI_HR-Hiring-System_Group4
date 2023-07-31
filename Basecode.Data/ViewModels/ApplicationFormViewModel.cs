@@ -41,12 +41,15 @@ namespace Basecode.Data.ViewModels
         public string ApplicantContactNumber { get; set; }
 
         [Required(ErrorMessage = "Civil Status is required.")]
-        public string ApplicantCivilStatus { get; set; }
+        public string CivilStatus { get; set; }
 
         /// <summary>
-        /// Gets or sets the CV file uploaded by the applicant.
+        /// Gets or sets the id of the CV file uploaded by the applicant.
         /// </summary>
-        public byte[] ApplicantCV { get; set; }
+        public int CVId { get; set; }
+
+        [Required(ErrorMessage = "CV file is required.")]
+        public byte[] CVFile { get; set; }
 
         /// <summary>
         /// Gets or sets the ID of the applicant's Character Reference.
