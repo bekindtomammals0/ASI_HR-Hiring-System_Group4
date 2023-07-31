@@ -47,23 +47,6 @@ namespace Basecode.Services.Services
             return data;
         }
 
-        public void Update(Applicant applicant)
-        {
-            var app = _repository.GetById(applicant.Id);
-
-            app.Id = applicant.Id;
-            app.UserID = applicant.UserID;
-            app.CivilStatusID = applicant.CivilStatusID;
-            app.CVId = applicant.CVId;
-            app.JobOpeningID = applicant.JobOpeningID;
-            app.CharacterReferenceID = applicant.CharacterReferenceID;
-            app.ProcessStatusID = applicant.ProcessStatusID;
-            app.CharacterReferenceResponded = applicant.CharacterReferenceResponded;
-            app.ContactNo = applicant.ContactNo;
-
-            _repository.Update(app);
-        }
-
         public void Delete(int id)
         {
             _repository.Delete(id);
