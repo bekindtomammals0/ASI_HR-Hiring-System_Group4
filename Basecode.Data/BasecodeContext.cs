@@ -7,9 +7,22 @@ namespace Basecode.Data
 {
     public class BasecodeContext : IdentityDbContext<IdentityUser>
     {
+        public BasecodeContext ()
+        {
+
+        }
+
         public BasecodeContext (DbContextOptions<BasecodeContext> options)
             : base(options)
         {}
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BaseCodeDBTest;Trusted_Connection=True;MultipleActiveResultSets=true");
+            }
+        }
 
         public void InsertNew(RefreshToken token)
         {
