@@ -10,7 +10,17 @@ namespace Basecode.Data
         public BasecodeContext (DbContextOptions<BasecodeContext> options)
             : base(options)
         {}
+        public BasecodeContext()
+        {
 
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if(!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("DefaultConnection");
+            }
+        }
         public void InsertNew(RefreshToken token)
         {
             var tokenModel = RefreshToken.SingleOrDefault(i => i.Username == token.Username);
