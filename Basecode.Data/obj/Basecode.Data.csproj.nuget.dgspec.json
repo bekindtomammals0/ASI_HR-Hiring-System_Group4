@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {}
+    "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
+    "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+        "projectUniqueName": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
         "projectName": "Basecode.Data",
-        "projectPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\Temp Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Temp Admin\\Documents\\000 Programming Projects\\Test MVC\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
+        "projectPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\m3lon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m3lon\\Downloads\\ASI_HR-Hiring-System_Group4\\Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Temp Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\m3lon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,6 +64,11 @@
               "target": "Package",
               "version": "[7.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[7.0.8, )"
@@ -101,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
