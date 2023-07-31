@@ -42,23 +42,5 @@ namespace Basecode.Services.Services
             var data = _mapper.Map<CharacterReference>(_repository.GetById(id));
             return data;
         }
-
-        public void Update(CharacterReference characterReference)
-        {
-            var charRef = _repository.GetById(characterReference.Id);
-
-            charRef.Id = characterReference.Id;
-            charRef.Email = characterReference.Email;
-            charRef.FirstName = characterReference.FirstName;
-            charRef.LastName = characterReference.LastName;
-            charRef.Responded = characterReference.Responded;
-
-            _repository.Update(charRef);
-        }
-
-        public void Delete(int id)
-        {
-            _repository.Delete(id);
-        }
     }
 }
