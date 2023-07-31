@@ -13,7 +13,5 @@ namespace Basecode.Services.Interfaces
         List<CharacterReference> RetrieveAll();
         void Add(CharacterReference characterReference);
         CharacterReference GetById(int id);
-        void Update(CharacterReference characterReference);
-        void Delete(int id);
     }
 }
