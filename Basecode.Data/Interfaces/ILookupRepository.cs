@@ -4,8 +4,10 @@ namespace Basecode.Data.Interfaces
 {
     public interface ILookupRepository
     {
+        IEnumerable<CivilStatus> GetCivilStatuses();
         IEnumerable<EmploymentType> GetEmploymentTypes();
         IEnumerable<ExperienceLevel> GetExperienceLevels();
-        IEnumerable<CivilStatus> GetCivilStatuses();
+        IEnumerable<ProcessStatus> GetProcessStatuses();
+
     }
 }
