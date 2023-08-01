@@ -20,7 +20,8 @@ CREATE TABLE [dbo].[JobOpening] (
     [createdTime]       DATETIME      NOT NULL,
     [createdBy]         CHAR (50)     NOT NULL,
     [updatedTime]       DATETIME      NULL,
-    [updatedBy]         CHAR (50)     NULL
+    [updatedBy]         CHAR (50)     NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 
 

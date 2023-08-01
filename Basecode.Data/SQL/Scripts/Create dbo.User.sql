@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[User] (
     [lastName]    VARCHAR (255) NOT NULL,
     [dateCreated] DATETIME      NULL,
     [lastActive]  DATETIME      NULL,
-    [isApplying]  BIT           NOT NULL
+    PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 
 
