@@ -57,8 +57,13 @@ namespace Basecode.WebApp.Controllers
         [HttpGet]
         public IActionResult Apply(int id)
         {
-            var data = _service.GetById(id);
-            return View(data);
+            JobOpeningViewModel jobOpeningViewModel = _service.GetById(id);
+            JobOpening jobOpening = new JobOpening { Title = jobOpeningViewModel.Title, 
+                                                    Description = jobOpeningViewModel.Description, 
+                                                    ExperienceLevelID = jobOpeningViewModel.ExperienceLevelID, 
+                                                    EmploymentTypeID = jobOpeningViewModel.EmploymentTypeID}; 
+            ViewData["JobOpeningData"]= jobOpening;
+            return View("~/Views/ApplicationForm/Index",ViewData["JobOpeningData"]);
         }
         [HttpGet]
         public IActionResult UpdateView(int id)
