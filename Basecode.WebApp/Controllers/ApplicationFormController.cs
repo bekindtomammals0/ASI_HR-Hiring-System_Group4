@@ -1,20 +1,24 @@
-﻿using Basecode.Data.Models;
+﻿
+using Basecode.Data.Models;
 using Basecode.Main.Controllers;
 using Basecode.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Basecode.WebApp.Controllers
 {
     public class ApplicationFormController : Controller
     {
+        private readonly IApplicantService _applicantService;
         private readonly ILogger<ApplicationFormController> _logger;
         private readonly ILookupService _lookupService;
         // private readonly IEmploymentTypeService _ETservice;
         // private readonly IExperienceLevelService _ELservice;
-        public ApplicationFormController(ILogger<ApplicationFormController> logger, ILookupService lookupService)
+        public ApplicationFormController(ILogger<ApplicationFormController> logger, ILookupService lookupService, IApplicantService applicantService)
         {
             // _ETservice = employmentTypeService;
             // _ELservice = experienceLevelService;
+            _applicantService = applicantService;
             _lookupService = lookupService;
             _logger = logger;
         }
@@ -29,12 +33,19 @@ namespace Basecode.WebApp.Controllers
             ViewBag.CivilStatus = civilStatusData;
             return View();
         }
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult AddApplicant(Applicant applicant)
+        {
+            _applicantService.Add(applicant);
+            return RedirectToAction("Index", "JobOpening");
+        }
 
         public IActionResult CharacterReference()
         {
             return View();
         }
 
-        
+
     }
 }
