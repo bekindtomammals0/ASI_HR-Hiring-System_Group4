@@ -4,6 +4,7 @@ using Basecode.Main.Controllers;
 using Basecode.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Basecode.Data.ViewModels;
 
 namespace Basecode.WebApp.Controllers
 {
@@ -35,8 +36,20 @@ namespace Basecode.WebApp.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult AddApplicant(Applicant applicant)
+        public IActionResult AddApplicant(ApplicationFormViewModel model)
         {
+            Applicant applicant = new Applicant
+            {
+                Id = model.ApplicantId,
+                JobOpeningID = model.JobOpeningId,
+                ApplicantFirstName = model.ApplicantFirstName,
+                ApplicantLastName = model.ApplicantLastName,
+                ApplicantEmail = model.ApplicantEmail,
+                ApplicantContactNumber = model.ApplicantContactNumber,
+                CivilStatusID = model.CivilStatusID,
+                CVId = model.CVId,
+                CharacterReferenceID = model.CharacterReferenceID,
+            };
             _applicantService.Add(applicant);
             return RedirectToAction("Index", "JobOpening");
         }
