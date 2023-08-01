@@ -9,8 +9,7 @@
 
 <link rel="stylesheet" href="~/css/jobOpening.css">
 
-<div class="background-tint"
-    style="padding: 0px; background-position: -250px -280px; background-image: url('https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1920/s3/img0mdgetufz');">
+<div class="background-tint">
 
     <div class="main">
         <!--Menu-->
@@ -98,27 +97,26 @@
                         <div class="joblist-item">
                             <div style="display: grid; grid-auto-flow: column;">
                                 <h3 class="header-text" style="font-weight: 700">@jobOpening.Title</h3>
-                                <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
+                                <p class="secondary-text-small" style="margin-left: 60%; ">Posted on 07/18/23 12:57PM</p>
                             </div>
-                            <p style="color: #8C8C8C; font-size: 14px;">(@ViewBag.ExpPairs[""+jobOpening.ExperienceLevelID]) @ViewBag.EmpPairs[""+jobOpening.EmploymentTypeID]</p>
-                            <div style="background-color: #D9D9D9;
-                                    border-radius: 10px;
-                                    width: 150px;
-                                    height: fit-content;
-                                    padding: 2px;
-                                    text-align: center;
-                                    margin-bottom: 1rem;">
-                                <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
+                            <p class="secondary-text-small">Sample Department</p>
+                            <div style="display: flex;">
+                                <div class="job-tag">
+                                    <p style="color: white; font-size: 14px; margin-bottom: 0px;">@ViewBag.ExpPairs[""+jobOpening.ExperienceLevelID]</p>
+                                </div>
+                                <div class="job-tag">
+                                    <p style="color: white; font-size: 14px; margin-bottom: 0px;">@ViewBag.EmpPairs[""+jobOpening.EmploymentTypeID]</p>
+                                </div>
                             </div>
                             <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
                                 @jobOpening.Description
                             </p>
-                            <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
+                            <div style="display: grid; grid-auto-flow: column; margin-top: 15%;">
                                 <h3 class="header-text" style="font-weight: 700"></h3>
                                 <div style="padding-left: 77%;">
                                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                                     {
-                                        <button style="border: 0px; background-color: white; margin-right: 10px;" onclick="ConfirmDelete(@jobOpening.Id)">
+                                        <button style="border: 0px; background-color: white; margin-right: 10px; margin-left: 15px" onclick="ConfirmDelete(@jobOpening.Id)">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                     width="30"
                                                     height="30"

@@ -28,11 +28,10 @@ namespace Basecode.WebApp.Controllers
             {
                 ExpPairs.Add("" + pair.Id, pair.Level);
             }
-            ViewBag.ExpPairs = ExpPairs;
             NameValueCollection EmpPairs = new System.Collections.Specialized.NameValueCollection();
             foreach (var pair in _lookupService.GetEmploymentTypes())
             {
-                ExpPairs.Add("" + pair.Id, pair.Type);
+                EmpPairs.Add("" + pair.Id, pair.Type);
             }
             ViewBag.ExpPairs = ExpPairs;
             ViewBag.EmpPairs = EmpPairs;
