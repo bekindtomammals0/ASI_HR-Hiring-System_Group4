@@ -25,7 +25,8 @@ namespace Basecode.Services.Services
             var data = _repository.RetrieveAll().Select(s => new CV
             {
                 Id = s.Id,
-                File = s.File
+                File = s.File,
+                FileName = s.FileName
             }).ToList();
             return data;
         }

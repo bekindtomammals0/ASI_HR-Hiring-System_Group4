@@ -25,14 +25,18 @@ namespace Basecode.Services.Services
             var data = _repository.RetrieveAll().Select(s => new Applicant
             {
                 Id = s.Id,
-                UserID = s.UserID,
+                FirstName = s.FirstName,
+                LastName = s.LastName,
+                Email = s.Email,
                 CivilStatusID = s.CivilStatusID,
                 CVId = s.CVId,
                 JobOpeningID = s.JobOpeningID,
                 CharacterReferenceID = s.CharacterReferenceID,
                 ProcessStatusID = s.ProcessStatusID,
                 CharacterReferenceResponded = s.CharacterReferenceResponded,
-                ContactNo = s.ContactNo
+                ContactNo = s.ContactNo,
+                DateApplied = s.DateApplied,
+                ScheduleDate = s.ScheduleDate
             }).ToList();
             return data;
         }

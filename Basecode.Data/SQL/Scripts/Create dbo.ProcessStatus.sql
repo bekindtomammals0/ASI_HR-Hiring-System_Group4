@@ -12,7 +12,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[ProcessStatus] (
-    [ID]     INT       NOT NULL,
+    [ID] INT NOT NULL PRIMARY KEY,
     [status] CHAR (50) NOT NULL
 );
 
