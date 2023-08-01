@@ -114,6 +114,18 @@ html * {
     color: white;
 }
 
+.danger2 {
+    background: #EC5D5D;
+    border-color: #EC5D5D;
+    color: white;
+}
+
+.danger2:hover {
+    border-color: #CE3A3A;
+    background: #CE3A3A;
+    color: white;
+}
+
 form {
     color: #555;
     display: flex;
