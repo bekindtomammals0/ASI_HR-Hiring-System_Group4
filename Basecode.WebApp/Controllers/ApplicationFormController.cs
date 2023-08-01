@@ -34,7 +34,6 @@ namespace Basecode.WebApp.Controllers
             ViewBag.CivilStatus = civilStatusData;
             return View();
         }
-        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult AddApplicant(ApplicationFormViewModel model)
         {
