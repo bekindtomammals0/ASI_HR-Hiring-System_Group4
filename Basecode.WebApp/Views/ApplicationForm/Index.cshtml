@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Basecode.Data.ViewModels
+@model ApplicationFormViewModel
+@{
     ViewData["Title"] = "Application Form";
     var jobOpeningData = ViewData["JobOpeningData"] as Basecode.Data.ViewModels.JobOpeningViewModel;
 }
@@ -15,28 +17,28 @@
         <div class="divider">
             <div class="column1">
                 <div class="input-field">
-                    <input type="text" required="required">
+                    <input asp-for="ApplicantFirstName" type="text" required="required">
                     <label>First Name</label>
                 </div>
                 <div class="input-field">
-                    <input type="email" required="required">
+                    <input asp-for="ApplicantEmail" type="email" required="required">
                     <label>Email</label>
                 </div>
                 <div class="input-field">
-                    <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required="required">
+                    <input asp-for="ApplicantContactNumber" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required="required">
                     <label>Contact Number</label>
                 </div>
             </div>
             <div class="column2">
                 <div class="input-field">
-                    <input type="text" required="required">
+                    <input asp-for="ApplicantLastName" type="text" required="required">
                     <label>Last Name</label>
                 </div>
                 <div class="dropdown-field">
-                    @Html.DropDownList("civil-status",new SelectList(ViewBag.CivilStatus, "civilStatusId","Select civil status"))
+                    @Html.DropDownList("CivilStatus",new SelectList(ViewBag.CivilStatus, "civilStatusId","Select civil status"))
                 </div>
                 <div class="file-field">
-                    <input type="file" id="myFile" name="filename" required="required">
+                    <input asp-for="CVFile" type="file" id="myFile" name="filename" required="required">
                 </div>
             </div>
         </div>
@@ -45,17 +47,17 @@
         <div class="divider">
             <div class="column1">
                 <div class="input-field">
-                    <input type="text" required="required">
+                    <input asp-for="CharacterReferenceFirstName" type="text" required="required">
                     <label>First Name</label>
                 </div>
                 <div class="input-field">
-                    <input type="email" required="required">
+                    <input asp-for="CharacterReferenceEmail" type="email" required="required">
                     <label>Email</label>
                 </div>
             </div>
             <div class="column2">
                 <div class="input-field">
-                    <input type="text" required="required">
+                    <input asp-for="CharacterReferenceLastName" type="text" required="required">
                     <label>Last Name</label>
                 </div>
             </div>
