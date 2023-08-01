@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Application Form";
+    var jobOpeningData = ViewData["JobOpeningData"] as Basecode.Data.ViewModels.JobOpeningViewModel;
 }
 
 <link rel="stylesheet" href="~/css/applicationForm.css">
@@ -7,7 +8,7 @@
 <div class="application-form-container">
     <div class="application-form-header">
         <h1>Job Application Form</h1>
-        <h5>IT Developer Position (Entry Level)</h5>
+        <h5>@jobOpeningData.Title</h5>
     </div>
     <div class="application-form-content">
         <p>Applicant Personal Information</p>
@@ -80,7 +81,7 @@
         </div>
         <div class="modal-buttons">
             <button id="cancel-btn">Cancel</button>
-            <button id="submit-btn"><a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Submit</a></button>
+            <button id="submit-btn"><a class="nav-link text-white" asp-area="" asp-controller="JobOpening" asp-action="Index">Submit</a></button>
         </div>
     </div>
 </div>
