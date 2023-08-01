@@ -42,13 +42,13 @@ namespace Basecode.WebApp.Controllers
             {
                 Id = model.ApplicantId,
                 JobOpeningID = model.JobOpeningId,
-                ApplicantFirstName = model.ApplicantFirstName,
-                ApplicantLastName = model.ApplicantLastName,
-                ApplicantEmail = model.ApplicantEmail,
-                ApplicantContactNumber = model.ApplicantContactNumber,
-                CivilStatusID = model.CivilStatusID,
-                CVId = model.CVId,
-                CharacterReferenceID = model.CharacterReferenceID,
+                // ApplicantFirstName = model.ApplicantFirstName,
+                // ApplicantLastName = model.ApplicantLastName,
+                // ApplicantEmail = model.ApplicantEmail,
+                // ApplicantContactNumber = model.ApplicantContactNumber,
+                // CivilStatusID = model.CivilStatusID,
+                // CVId = model.CVId,
+                // CharacterReferenceID = model.CharacterReferenceID,
             };
             _applicantService.Add(applicant);
             return RedirectToAction("Index", "JobOpening");
