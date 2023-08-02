@@ -14,80 +14,71 @@
 
     <div class="main">
         <!--Menu-->
-            <div class="menu">
-                <div class="menu-section" style="height: 15%;">
+        <div class="menu">
+            <div class="menu-section" style="height: 15%;">
                 @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                 {
-                    <button type="button" class="btn danger" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter" style="height: 80%; width: 90%;">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             width="20"
-                             height="20"
-                             fill="currentColor"
-                             class="bi bi-plus"
-                             viewBox="0 0 16 16"
-                             style="vertical-align: top; margin-top: 1px;">
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    <button type="button" class="btn danger" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+                        style="height: 80%; width: 90%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16" style="vertical-align: top; margin-top: 1px;">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                         </svg>
                         Add Job Opening
                     </button>
                 }
                 else
                 {
-                    <button type="button" class="btn danger"
-                            style="height: 80%; width: 90%;">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                             width="20"
-                             height="20"
-                             fill="currentColor"
-                             class="bi bi-plus"
-                             viewBox="0 0 16 16"
-                             style="vertical-align: top; margin-top: 1px;">
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    <button type="button" class="btn danger" style="height: 80%; width: 90%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16" style="vertical-align: top; margin-top: 1px;">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                         </svg>
                         Must be logged in Admin to Add Job Opening
                     </button>
                 }
-                    
+
                 @Html.Partial("_JobAdd", new JobOpeningViewModel(@ViewBag.EmploymentTypes, @ViewBag.ExperienceLevels))
+            </div>
+            <div class="menu-section">
+                <h5 style="margin-bottom: 1.5rem; font-weight: bold;">Filter By Department</h5>
+                <div class="form-check" style="margin-top: 10px;">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Sample Department
+                    </label>
                 </div>
-                <div class="menu-section">
-                    <h5 style="margin-bottom: 1.5rem; font-weight: bold;">Filter By Department</h5>
-                    <div class="form-check" style="margin-top: 10px;">
-                        <input class="form-check-input" type="checkbox" value="">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Sample Department
-                        </label>
-                    </div>
-                    <div class="form-check" style="margin-top: 10px;">
-                        <input class="form-check-input" type="checkbox" value="">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Sample Department
-                        </label>
-                    </div>
-                    <div class="form-check" style="margin-top: 10px;">
-                        <input class="form-check-input" type="checkbox" value="">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Sample Department
-                        </label>
-                    </div>
+                <div class="form-check" style="margin-top: 10px;">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Sample Department
+                    </label>
                 </div>
-                <div class="menu-section" style="margin-bottom: 0px;">
-                    <h5 style="margin-bottom: 1.5rem; font-weight: bold;">Quick Links</h5>
-                    <div style="display: flex; flex-direction: column;">
-                        <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Register CV and Resume</a>
-                        <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Company Information</a>
-                        <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Contact Us</a>
-                    </div>
+                <div class="form-check" style="margin-top: 10px;">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Sample Department
+                    </label>
                 </div>
             </div>
-        
+            <div class="menu-section" style="margin-bottom: 0px;">
+                <h5 style="margin-bottom: 1.5rem; font-weight: bold;">Quick Links</h5>
+                <div style="display: flex; flex-direction: column;">
+                    <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Register CV and Resume</a>
+                    <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Company Information</a>
+                    <a href="#" style="color: #EC5D5D; text-decoration: none; margin-bottom: 5px;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
         <!--Job List-->
         <div class="content">
             <h2 class="header-text" style="color: white; margin-top: 15px;">Jobs</h2>
             <div class="input-group" style="width: 95%; height: 45px; border-radius: 4px;">
                 <form class="nosubmit">
-                  <input class="nosubmit" type="search" placeholder="Search for Careers...">
+                    <input class="nosubmit" type="search" placeholder="Search for Careers...">
                 </form>
             </div>
             <ul class="joblist">
@@ -98,64 +89,93 @@
                         <div class="joblist-item">
                             <div style="display: grid; grid-auto-flow: column;">
                                 <h3 class="header-text" style="font-weight: 700">@jobOpening.Title</h3>
-                                <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on 07/18/23 12:57PM</p>
+                                <p style="margin-left: 55%; color: #8C8C8C; font-size: 14px;">Posted on
+                                        @jobOpening.CreatedTime</p>
                             </div>
-                            <p style="color: #8C8C8C; font-size: 14px;">(@ViewBag.ExpPairs[""+jobOpening.ExperienceLevelID]) @ViewBag.EmpPairs[""+jobOpening.EmploymentTypeID]</p>
+                            <p style="color: #8C8C8C; font-size: 14px;">
+                            @* Display Employment Type, Experience Level Required *@
+                            @if (jobOpening.EmploymentTypeID == 1)
+                            {
+                                @:Intern,
+                            }
+                            else
+                            {
+                                @:Full-time,
+                            }
+
+                            @if (jobOpening.ExperienceLevelID == 1)
+                            {
+                                @: Fresh
+                            }
+                            else if (jobOpening.ExperienceLevelID == 2)
+                            {
+                                @: Entry-level
+                            }
+                            else if (jobOpening.ExperienceLevelID == 3)
+                            {
+                                @: Intermediate
+                            }
+                            else
+                            {
+                                @: Senior
+                            }
+                            @*(@ViewBag.ExpPairs[""+jobOpening.ExperienceLevelID])
+                            @ViewBag.EmpPairs[""+jobOpening.EmploymentTypeID]*@
+                            </p>
                             <div style="background-color: #D9D9D9;
-                                    border-radius: 10px;
-                                    width: 150px;
-                                    height: fit-content;
-                                    padding: 2px;
-                                    text-align: center;
-                                    margin-bottom: 1rem;">
+                    border-radius: 10px;
+                    width: 150px;
+                    height: fit-content;
+                    padding: 2px;
+                    text-align: center;
+                    margin-bottom: 1rem;">
                                 <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
                             </div>
                             <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
-                                @jobOpening.Description
+                                    @jobOpening.Description
                             </p>
                             <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
                                 <h3 class="header-text" style="font-weight: 700"></h3>
                                 <div style="padding-left: 77%;">
                                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-                                    {
-                                        <button style="border: 0px; background-color: white; margin-right: 10px;" onclick="ConfirmDelete(@jobOpening.Id)">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="30"
-                                                    height="30"
-                                                    fill="currentColor"
-                                                    class="bi bi-trash"
-                                                    viewBox="0 0 16 16">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                        {
+                                        <button style="border: 0px; background-color: white; margin-right: 10px;"
+                                            onclick="ConfirmDelete(@jobOpening.Id)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                                class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                                <path
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                                             </svg>
                                         </button>
-                                        <button style="border: 0px; background-color: white;" onclick="ConfirmUpdate(@jobOpening.Id)">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="30"
-                                                    height="30"
-                                                    fill="currentColor"
-                                                    class="bi bi-pencil-square"
-                                                    viewBox="0 0 16 16">
-                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        <button style="border: 0px; background-color: white;"
+                                            onclick="ConfirmUpdate(@jobOpening.Id)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                             </svg>
                                         </button>
-                                    }
-                                    else
-                                    {
-                                        <button class ="apply-btn" type="submit"><a asp-controller="JobOpening" asp-action="Apply">Apply</a></button>
-                                    }
+                                        }
+                                        else
+                                        {
+                                        <button class="apply-btn" type="submit"><a asp-controller="JobOpening"
+                                                asp-action="Apply">Apply</a></button>
+                                        }
                                 </div>
                             </div>
                         </div>
                     </li>
                     }
-                    
                 </li>
             </ul>
 
             <!--Update Modal-->
-            <div class="modal fade" id="UpdateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="UpdateModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="update-modal">
@@ -197,46 +217,46 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script>
-        $(document).ready(function () {
+<script>
+    $(document).ready(function () {
 
-        })
-        var HideModal = function () {
-            $("#DeleteModal").modal('hide');
-        }
-        var ConfirmDelete = function (jobOpeningId) {
-            $("#hiddenJobOpeningId").val(jobOpeningId);
-            $("#DeleteModal").modal('show');
-        }
-        var Delete = function () {
-            var jobOpeningId = $("#hiddenJobOpeningId").val();
-            $.ajax({
-                type: "POST",
-                url: "/JobOpening/Delete",
-                data: { id: jobOpeningId },
-                success: function (result) {
-                    $("#DeleteModal").modal("hide");
-                    $("#hiddenJobOpeningId").val(null);
-                    location.reload();
-                }
-            });
-        }
-        var ConfirmUpdate = function (jobOpeningId) {
-            $.ajax({
-                type: "POST",
-                url: "/JobOpening/PartialUpdate",
-                data: { id: jobOpeningId },
-                success: function (response) {
-                    $("#UpdateModal").find("div.modal-content").html(response);
-                    $("#UpdateModal").modal('show');
-                },
-                failure: function (response) {
-                    alert(response.responseText);
-                },
-                error: function (response) {
-                    alert(response.responseText);
-                }
-            });
-        }
-    </script>
+    })
+    var HideModal = function () {
+        $("#DeleteModal").modal('hide');
+    }
+    var ConfirmDelete = function (jobOpeningId) {
+        $("#hiddenJobOpeningId").val(jobOpeningId);
+        $("#DeleteModal").modal('show');
+    }
+    var Delete = function () {
+        var jobOpeningId = $("#hiddenJobOpeningId").val();
+        $.ajax({
+            type: "POST",
+            url: "/JobOpening/Delete",
+            data: { id: jobOpeningId },
+            success: function (result) {
+                $("#DeleteModal").modal("hide");
+                $("#hiddenJobOpeningId").val(null);
+                location.reload();
+            }
+        });
+    }
+    var ConfirmUpdate = function (jobOpeningId) {
+        $.ajax({
+            type: "POST",
+            url: "/JobOpening/PartialUpdate",
+            data: { id: jobOpeningId },
+            success: function (response) {
+                $("#UpdateModal").find("div.modal-content").html(response);
+                $("#UpdateModal").modal('show');
+            },
+            failure: function (response) {
+                alert(response.responseText);
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+    }
+</script>
 }
