@@ -118,6 +118,16 @@ input {
     color: #EC5D5D;
 }
 
+    .view-btn:hover {
+        background-color: #ce3a3a;
+        color: white;
+    }
+
+    .view-btn:active {
+        background-color: #9F2020;
+        color: white;
+    }
+
 .modal {
     display: none;
     position: fixed;
@@ -159,13 +169,10 @@ input {
 
 .applicant-shortlist {
     /* position: relative; */
-    margin-top: 230px
+    margin-top: 220px
 }
 
 #shortlist, #return {
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
 }
 
@@ -179,8 +186,28 @@ input {
     border: none;
     font-size: 16px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-#return {
+    #shortlist-btn:hover {
+        background-color: #ce3a3a;
+        color: white;
+    }
+
+    #shortlist-btn:active{
+        background-color: #9f2020;
+        color: white;
+    }
+
+.nav-link.text {
     color: #ec5d5d;
+    padding: 0rem !important;
 }
+
+    .nav-link.text:hover {
+        color: #CE3A3A;
+    }
+
+    .nav-link.text:active {
+        color: #9f2020;
+    }
