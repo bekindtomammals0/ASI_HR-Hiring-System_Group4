@@ -8,7 +8,7 @@ namespace Basecode.WebApp
     {
         private void ConfigureDatabase(IServiceCollection services)
         {
-            string server = Environment.GetEnvironmentVariable("DB_NAME");
+            string server = Environment.GetEnvironmentVariable("DB_SERVER");
             string database = Environment.GetEnvironmentVariable("DB_NAME");
             string username = Environment.GetEnvironmentVariable("DB_USER");
             string password = Environment.GetEnvironmentVariable("DB_PASSWORD");
@@ -16,7 +16,7 @@ namespace Basecode.WebApp
             if (!string.IsNullOrEmpty(server) && !string.IsNullOrEmpty(database) && !string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
             {
                 // All environment variables are set, use them to construct the connection string
-                string connectionString = $"Server={server};Database={database};User Id={username};Password={password};Trusted_Connection=True;MultipleActiveResultSets=true";
+                string connectionString = $"Server={server},1433;Database={database};User Id={username};Password={password};Trusted_Connection=True;MultipleActiveResultSets=true";
                 services.AddDbContext<BasecodeContext>(options =>
                     options.UseSqlServer(connectionString, optionsAction => { })
                 );
@@ -35,7 +35,7 @@ namespace Basecode.WebApp
             services.AddIdentity<IdentityUser, IdentityRole>()
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<BasecodeContext>()
-                    .AddDefaultTokenProviders();      
+                    .AddDefaultTokenProviders();
         }
     }
 }

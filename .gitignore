@@ -403,3 +403,13 @@ FodyWeavers.xsd
 /Basecode.Data/bin/
 /Basecode.Services/obj/
 /Basecode.Services/bin/
+Basecode.Data/Migrations/20230713142313_Basecode.Data.cs
+Basecode.Data/Migrations/20230713142313_Basecode.Data.Designer.cs
+Basecode.Data/Migrations/20230731011441_July31_1.cs
+Basecode.Data/Migrations/20230731011441_July31_1.Designer.cs
+Basecode.Data/Migrations/BasecodeContextModelSnapshot.cs
+Basecode.Data/Migrations/20230713142313_Basecode.Data.cs
+Basecode.Data/Migrations/20230713142313_Basecode.Data.Designer.cs
+Basecode.Data/Migrations/BasecodeContextModelSnapshot.cs
+Basecode.Services/obj/Debug/net7.0/ref/Basecode.Services.dll
+Basecode.Services/obj/Debug/net7.0/refint/Basecode.Services.dll

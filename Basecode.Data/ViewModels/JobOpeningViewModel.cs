@@ -13,6 +13,10 @@ namespace Basecode.Data.ViewModels
     /// </summary>
     public class JobOpeningViewModel
     {
+        //default constructor
+        public JobOpeningViewModel()
+        {
+        }
         /// <summary>
         /// Gets or sets the ID of the Job Opening.
         /// </summary>
@@ -86,6 +90,12 @@ namespace Basecode.Data.ViewModels
             // For example, validating foreign key constraints
 
             return results;
+        }
+        //custom constructors
+        public JobOpeningViewModel(List<EmploymentType> employmentTypes, List<ExperienceLevel> experienceLevels)
+        {
+            EmploymentTypes = employmentTypes;
+            ExperienceLevels = experienceLevels;
         }
     }
 }

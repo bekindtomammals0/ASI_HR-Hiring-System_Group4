@@ -51,7 +51,6 @@ namespace Basecode.WebApp.Controllers
             }
             return View(createRoleViewModel);
         }
-        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Register(RegistrationViewModel registrationViewModel)  //register new user
         {
@@ -207,9 +206,11 @@ namespace Basecode.WebApp.Controllers
             return View(loginViewModel);
         }
         [HttpGet]
-        public IActionResult RegisterView()
+        [AllowAnonymous]
+        public IActionResult Register()
         {
-            return View("Register");
+            RegistrationViewModel model = new RegistrationViewModel();
+            return View(model);
         }
         [HttpGet]
         public IActionResult EditUserRole()
