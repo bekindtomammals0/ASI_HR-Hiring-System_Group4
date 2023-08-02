@@ -51,12 +51,12 @@
         <div class="applicant-header">
             <p class="applicant-title"> Job Applicants </p>
             <form>
-                <input type="text" placeholder="Search applicants.." name="search" class="searchbar">
+                <input type="text" placeholder="Search applicants.." name="search" class="searchbar" id="searchInput">
             </form>
         </div>
         <div class="applicant-table">
             <table id="applicant-info">
-                <tr>
+                <tr id="header-row">
                     <th>Date Applied</th>
                     <th>Applicant Name</th>
                     <th>Job Title</th>
@@ -66,7 +66,7 @@
                 </tr>
                 <tr>
                     <td>06/19/2023</td>
-                    <td>Applicant No. 1</td>
+                    <td>Ran Takahashi</td>
                     <td>Sample Job Title</td>
                     <td>06/26/2023</td>
                     <td>For Final Interview</td>
@@ -74,7 +74,7 @@
                 </tr>
                 <tr>
                     <td>06/20/2023</td>
-                    <td>Applicant No. 2</td>
+                    <td>Yuki Ishikawa</td>
                     <td>Sample Job Title</td>
                     <td>N/A</td>
                     <td>For Technical Exam</td>
@@ -82,7 +82,7 @@
                 </tr>
                 <tr>
                     <td>06/21/2023</td>
-                    <td>Applicant No. 3</td>
+                    <td>Yuji Nishida</td>
                     <td>Sample Job Title</td>
                     <td>06/28/2023</td>
                     <td>Deployed</td>
@@ -90,7 +90,7 @@
                 </tr>
                 <tr>
                     <td>06/22/2023</td>
-                    <td>Applicant No. 4</td>
+                    <td>Kento Miyaura</td>
                     <td>Sample Job Title</td>
                     <td>06/29/2023</td>
                     <td>For Screening</td>
@@ -98,7 +98,7 @@
                 </tr>
                 <tr>
                     <td>06/23/2023</td>
-                    <td>Applicant No. 5</td>
+                    <td>Akihiro Yamauchi</td>
                     <td>Sample Job Title</td>
                     <td>06/30/2023</td>
                     <td>Onboarding</td>
@@ -106,7 +106,7 @@
                 </tr>
                 <tr>
                     <td>06/26/2023</td>
-                    <td>Applicant No. 6</td>
+                    <td>Masahiro Yanagida</td>
                     <td>Sample Job Title</td>
                     <td>07/03/2023</td>
                     <td>For HR Interview</td>
@@ -114,7 +114,7 @@
                 </tr>
                 <tr>
                     <td>06/27/2023</td>
-                    <td>Applicant No. 7</td>
+                    <td>Tomohiro Yamamoto</td>
                     <td>Sample Job Title</td>
                     <td>N/A</td>
                     <td>For Technical Exam</td>
@@ -122,7 +122,7 @@
                 </tr>
                 <tr>
                     <td>06/28/2023</td>
-                    <td>Applicant No. 8</td>
+                    <td>Motoki Eiro</td>
                     <td>Sample Job Title</td>
                     <td>07/05/2023</td>
                     <td>For Screening</td>
@@ -130,7 +130,7 @@
                 </tr>
                 <tr>
                     <td>06/29/2023</td>
-                    <td>Applicant No. 9</td>
+                    <td>Kentaro Takahashi</td>
                     <td>Sample Job Title</td>
                     <td>07/06/2023</td>
                     <td>Deployed</td>
@@ -138,7 +138,23 @@
                 </tr>
                 <tr>
                     <td>06/30/2023</td>
-                    <td>Applicant No. 10</td>
+                    <td>Masahiro Sekita</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 11</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 12</td>
                     <td>Sample Job Title</td>
                     <td>07/07/2023</td>
                     <td>Deployed</td>
@@ -172,7 +188,7 @@
         <div class="applicant-shortlist">
             <p id="shortlist">Shortlist applicant?</p>
             <button id="shortlist-btn">Yes, shortlist.</button>
-            <p id="return">Return</p>
+            <p id="return"><a class="nav-link text" asp-area="" asp-controller="Scheduler" asp-action="Index">Return</a></p>
         </div>
     </div>
 </div>
