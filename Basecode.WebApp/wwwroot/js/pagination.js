@@ -20,7 +20,7 @@ function showInfoRows(page) {
     }
 }
 
-function setInfoActiveLink() {
+function setInfoActiveLink(event) {
     let clickedValue = parseInt(event.target.getAttribute("value"));
 
     if (clickedValue !== infoCurrentPage) {
@@ -58,6 +58,11 @@ function infoNextBtn() {
 
 document.getElementById("info-prev-btn").addEventListener("click", infoPrevBtn);
 document.getElementById("info-next-btn").addEventListener("click", infoNextBtn);
+
+// Event Listener for Info Links
+for (let element of infoLinkElements) {
+    element.addEventListener("click", setInfoActiveLink);
+}
 
 // Initial setup
 showInfoRows(infoCurrentPage);
