@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Scheduler";
+}
+
+<link rel="stylesheet" href="~/css/scheduler.css">
+<link rel="stylesheet" href="~/css/pagination.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="scheduler-container">
+    <div class="sidebar">
+        <p class="filter-header">Filter</p>
+        <p class="status-filter">By Status:</p>
+        <form class="sidebar-form">
+            <input type="checkbox" id="filter1" name="filter1" value="Failed">
+            <label for="filter1">Rejected/Failed</label><br>
+            <input type="checkbox" id="filter2" name="filter2" value="Shortlisted">
+            <label for="filter2">Shortlisted</label><br>
+            <input type="checkbox" id="filter3" name="filter3" value="Screening">
+            <label for="filter3">For Screening</label><br>
+            <input type="checkbox" id="filter4" name="filter4" value="HRInterview">
+            <label for="filter4">For HR Interview</label><br>
+            <input type="checkbox" id="filter5" name="filter5" value="TechnicalInterview">
+            <label for="filter5">For Technical Interview</label><br>
+            <input type="checkbox" id="filter6" name="filter6" value="TechnicalExam">
+            <label for="filter6">For Technical Exam</label><br>
+            <input type="checkbox" id="filter7" name="filter7" value="BackgroundCheck">
+            <label for="filter7">Undergoing Background Check</label><br>
+            <input type="checkbox" id="filter8" name="filter8" value="FinalInterview">
+            <label for="filter8">For Final Interview</label><br>
+            <input type="checkbox" id="filter9" name="filter9" value="JobOffer">
+            <label for="filter9">Undergoing Job Offer</label><br>
+            <input type="checkbox" id="filter10" name="filter10" value="Confirmed">
+            <label for="filter10">Confirmed Job Offer</label><br>
+            <input type="checkbox" id="filter11" name="filter11" value="NotConfirmed">
+            <label for="filter11">Not Confirmed Job Offer</label><br>
+            <input type="checkbox" id="filter12" name="filter12" value="Onboarding">
+            <label for="filter12">Onboarding</label><br>
+            <input type="checkbox" id="filter13" name="filter13" value="Deployed">
+            <label for="filter13">Deployed</label><br>
+        </form>
+        <p class="date-filter">By Date:</p>
+        <form class="sidebar-form">
+            <label for="from">From:</label>
+            <input type="date" id="from" name="from"><br>
+            <label for="to">To:</label>
+            <input type="date" id="to" name="to">
+        </form>
+    </div>
+
+    <div class="applicant-container">
+        <div class="applicant-header">
+            <p class="applicant-title"> Job Applicants </p>
+            <form>
+                <input type="text" placeholder="Search applicants.." name="search" class="searchbar" id="searchInput">
+            </form>
+        </div>
+        <div class="applicant-table">
+            <table id="applicant-info">
+                <tr id="header-row">
+                    <th>Date Applied</th>
+                    <th>Applicant Name</th>
+                    <th>Job Title</th>
+                    <th>Scheduled Date</th>
+                    <th>Status</th>
+                    <th>Applicant Details</th>
+                </tr>
+                <tr>
+                    <td>06/19/2023</td>
+                    <td>Ran Takahashi</td>
+                    <td>Sample Job Title</td>
+                    <td>06/26/2023</td>
+                    <td>For Final Interview</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/20/2023</td>
+                    <td>Yuki Ishikawa</td>
+                    <td>Sample Job Title</td>
+                    <td>N/A</td>
+                    <td>For Technical Exam</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/21/2023</td>
+                    <td>Yuji Nishida</td>
+                    <td>Sample Job Title</td>
+                    <td>06/28/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/22/2023</td>
+                    <td>Kento Miyaura</td>
+                    <td>Sample Job Title</td>
+                    <td>06/29/2023</td>
+                    <td>For Screening</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/23/2023</td>
+                    <td>Akihiro Yamauchi</td>
+                    <td>Sample Job Title</td>
+                    <td>06/30/2023</td>
+                    <td>Onboarding</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/26/2023</td>
+                    <td>Masahiro Yanagida</td>
+                    <td>Sample Job Title</td>
+                    <td>07/03/2023</td>
+                    <td>For HR Interview</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/27/2023</td>
+                    <td>Tomohiro Yamamoto</td>
+                    <td>Sample Job Title</td>
+                    <td>N/A</td>
+                    <td>For Technical Exam</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/28/2023</td>
+                    <td>Motoki Eiro</td>
+                    <td>Sample Job Title</td>
+                    <td>07/05/2023</td>
+                    <td>For Screening</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/29/2023</td>
+                    <td>Kentaro Takahashi</td>
+                    <td>Sample Job Title</td>
+                    <td>07/06/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Masahiro Sekita</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 11</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 12</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+            </table>
+            <div class="info-pagination">
+                <button id="info-prev-btn" onclick="infoPrevBtn()">prev</button>
+                <ul class="info-pagination-list">
+                    <li class="info-link active" value="1" onclick="setInfoActiveLink()">1</li>
+                    <li class="info-link" value="2" onclick="setInfoActiveLink()">2</li>
+                    <li class="info-link" value="3" onclick="setInfoActiveLink()">3</li>
+                </ul>
+                <button id="info-next-btn" onclick="infoNextBtn()">next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-screen" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Applicant</h1>
+        </div>
+        <div class="applicant-info">
+            <p id="applicant-name-label">Name:</p>
+            <p id="applicant-name">Barcenilla, Adrian Jay</p>
+            <p id="applicant-job-label">Job:</p>
+            <p id="applicant-job">Junior Engineer</p>
+        </div>
+        <div class="applicant-shortlist">
+            <p id="shortlist">Shortlist applicant?</p>
+            <button id="shortlist-btn">Yes, shortlist.</button>
+            <p id="return"><a class="nav-link text" asp-area="" asp-controller="Scheduler" asp-action="Index">Return</a></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/scheduler.js"></script>
+<script type="text/javascript" src="~/js/pagination.js"></script>

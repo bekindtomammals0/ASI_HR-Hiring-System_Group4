@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Character Reference";
+}
+
+<link rel="stylesheet" href="~/css/characterReference.css">
+
+<div class="character-reference-container">
+    <div class="character-reference-header">
+        <h1>Job Application Form</h1>
+        <h5>IT Developer Position (Entry Level)</h5>
+    </div>
+    <div class="character-reference-content">
+        <p class="content-title">Character Reference</p>
+        <div class="divider">
+            <div class="column1">
+                <div class="input-field">
+                    <input type="text" required="required">
+                    <label>First Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" required="required">
+                    <label>Email</label>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="input-field">
+                    <input type="text" required="required">
+                    <label>Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="cf-buttons">
+            <button class="cf-back-btn"><a class="nav-link text" asp-area="" asp-controller="ApplicationForm" asp-action="Index">Back</a></button>
+            <button class="cf-submit-btn" id="submit-btn">Submit</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-screen" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p class="details">Confirmation of Submission</p>
+            <p class="close" id="close-btn">&times;</p>
+        </div>
+        <div class="modal-message">
+            <p class="message1">Please ensure that you have reviewed the information correctly. Once you submit this application,
+                you can submit another one only after 6 months.</p>
+            </p>
+            <p class="message2">Are you sure you want to <span>submit</span> this application?</p>
+        </div>
+        <div class="modal-buttons">
+            <button id="cancel-btn">Cancel</button>
+            <button id="submit-btn"><a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Submit</a></button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/characterReference.js"></script>

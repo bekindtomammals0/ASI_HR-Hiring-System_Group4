@@ -1,0 +1,91 @@
+﻿@using Basecode.Data.ViewModels
+@model ApplicationFormViewModel
+@{
+    ViewData["Title"] = "Application Form";
+    var jobOpeningData = ViewData["JobOpeningData"] as JobOpeningViewModel;
+}
+
+<link rel="stylesheet" href="~/css/applicationForm.css">
+
+<div class="application-form-container">
+    <div class="application-form-header">
+        <h1>Job Application Form</h1>
+        <h5>@jobOpeningData.Title</h5>
+    </div>
+    <form asp-action="AddApplicant">
+    <div class="application-form-content">
+        <p>Applicant Personal Information</p>
+        <div class="divider">
+            <div class="column1">
+                <div class="input-field">
+                    <input asp-for="ApplicantFirstName" type="text" required="required">
+                    <label>First Name</label>
+                </div>
+                <div class="input-field">
+                    <input asp-for="ApplicantEmail" type="email" required="required">
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input asp-for="ApplicantContactNumber" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required="required">
+                    <label>Contact Number</label>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="input-field">
+                    <input asp-for="ApplicantLastName" type="text" required="required">
+                    <label>Last Name</label>
+                </div>
+                <div class="dropdown-field">
+                    @Html.DropDownList("CivilStatus",new SelectList(ViewBag.CivilStatus, "civilStatusId","Select civil status"))
+                </div>
+                <div class="file-field">
+                    <input asp-for="CVFile" type="file" id="myFile" name="filename" required="required">
+                </div>
+            </div>
+        </div>
+    <div class="character-reference-content">
+        <p>Character Reference</p>
+        <div class="divider">
+            <div class="column1">
+                <div class="input-field">
+                    <input asp-for="CharacterReferenceFirstName" type="text" required="required">
+                    <label>First Name</label>
+                </div>
+                <div class="input-field">
+                    <input asp-for="CharacterReferenceEmail" type="email" required="required">
+                    <label>Email</label>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="input-field">
+                    <input asp-for="CharacterReferenceLastName" type="text" required="required">
+                    <label>Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="cf-buttons">
+            <button class="cf-back-btn"><a class="nav-link text" asp-area="" asp-controller="ApplicationForm" asp-action="Index">Back</a></button>
+            <button class="cf-submit-btn" id="submit-btn">Submit</button>
+        </div>
+    </div>
+    </form>
+</div>
+
+<div id="modal-screen" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p class="details">Confirmation of Submission</p>
+            <p class="close" id="close-btn">&times;</p>
+        </div>
+        <div class="modal-message">
+            <p class="message1">Please ensure that you have reviewed the information correctly. Once you submit this application,
+                you can submit another one only after 6 months.</p>
+            </p>
+            <p class="message2">Are you sure you want to <span>submit</span> this application?</p>
+        </div>
+        <div class="modal-buttons">
+            <button id="cancel-btn">Cancel</button>
+            <button id="submit-btn"><a class="nav-link text-white" asp-area="" asp-controller="JobOpening" asp-action="Index">Submit</a></button>
+        </div>
+    </div>
+</div>

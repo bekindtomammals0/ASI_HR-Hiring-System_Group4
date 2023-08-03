@@ -1,0 +1,143 @@
+﻿body {
+    background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-d-rendering-of-a-modern-office-interior-design-with-open-picture-image_2762160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(53, 53, 53, 0.75);
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+}
+
+h1, h5 {
+    color: white;
+}
+
+p {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 40px 40px 10px 40px;
+}
+
+.application-form-header {
+    text-align: center;
+    margin: 30px;
+}
+
+.application-form-content {
+    width: 80%;
+    height: 515px;
+    max-width: 1050px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0;
+}
+
+    .input-field label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+    .input-field input:focus ~ label, .input-field input:valid ~ label {
+        padding-top: 8px;
+        padding-bottom: 5px;
+        top: 10px;
+        font-size: 10px;
+        color: #9D99AC;
+    }
+
+    .input-field input:focus {
+        border: 1px solid #ec5d5d;
+    }
+
+    .input-field input {
+        width: 340px;
+        height: 100%;
+        background: #F1F1F1;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 0 15px 0 15px;
+        border-radius: 5px;
+    }
+
+.dropdown-field {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0px;
+}
+
+    .dropdown-field select:focus {
+        border: 1px solid #ec5d5d;
+    }
+
+    .dropdown-field select {
+        width: 340px;
+        height: 100%;
+        background: #F1F1F1;
+        border: none;
+        outline: none;
+        padding: 0 15px 0 10px;
+        border-radius: 5px;
+    }
+
+.file-field {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0px;
+}
+
+    .file-field input:focus {
+        border: 1px solid #ec5d5d;
+    }
+
+    .file-field input {
+        width: 340px;
+        height: 100%;
+        background: #F1F1F1;
+        border: none;
+        outline: none;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+.af-next-btn {
+    width: 200px;
+    height: 40px;
+    background-color: #EC5D5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-top: 20px;
+}
+
+    .af-next-btn:hover {
+        background-color: #CE3A3A;
+    }
+
+    .af-next-btn:active {
+        background-color: #9F2020;
+    }

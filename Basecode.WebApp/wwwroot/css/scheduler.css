@@ -1,0 +1,213 @@
+﻿body {
+    background-image: url('https://www.nolanpainting.com/content/uploads/2020/08/shutterstock_1733801297-scaled.jpeg');
+    background-color: rgba(53, 53, 53, 0.75);
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: calc(100% - 100px);
+    margin-left: 50px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr {
+    height: 45px;
+}
+
+th {
+    background-color: #EC5D5D;
+    color: white;
+}
+
+td {
+    background-color: white;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    MAX-WIDTH: 100VW;
+}
+
+.pb-3 {
+    width: 100%;
+}
+
+/* .mb-3 {
+    margin-bottom: 0px !important;
+} */
+
+.scheduler-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 370px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    float: left;
+}
+
+.filter-header {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.status-filter {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.date-filter {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.sidebar-form {
+    padding-left: 40px;
+}
+
+.applicant-container {
+    flex: 1;
+}
+
+.applicant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.applicant-title {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.searchbar {
+    width: 335px;
+    height: 30px;
+    margin-right: 50px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.view-btn {
+    width: 140px;
+    height: 30px;
+    border: 1px solid #EC5D5D;
+    background-color: transparent;
+    color: #EC5D5D;
+}
+
+    .view-btn:hover {
+        background-color: #ce3a3a;
+        color: white;
+    }
+
+    .view-btn:active {
+        background-color: #9F2020;
+        color: white;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 360px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    float: right;
+}
+
+.modal-header {
+    margin-left: 20px !important;
+    margin-top: 50px !important;
+}
+
+#applicant-name-label, #applicant-job-label {
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#applicant-name, #applicant-job {
+    margin-left: 40px;
+}
+
+.applicant-shortlist {
+    /* position: relative; */
+    margin-top: 220px
+}
+
+#shortlist, #return {
+    text-align: center;
+}
+
+#shortlist-btn {
+    display: block;
+    width: 210px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #EC5D5D;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    #shortlist-btn:hover {
+        background-color: #ce3a3a;
+        color: white;
+    }
+
+    #shortlist-btn:active{
+        background-color: #9f2020;
+        color: white;
+    }
+
+.nav-link.text {
+    color: #ec5d5d;
+    padding: 0rem !important;
+}
+
+    .nav-link.text:hover {
+        color: #CE3A3A;
+    }
+
+    .nav-link.text:active {
+        color: #9f2020;
+    }

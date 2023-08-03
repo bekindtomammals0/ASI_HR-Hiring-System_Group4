@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+html,
+body,
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-text {
+    margin-bottom: 0px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.joblist {
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style-type: none;
+    height: 550px;
+    padding-left: 0px;
+    border-radius: 15px;
+}
+
+.joblist::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.joblist-item {
+    width: 95%;
+    height: 350px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px rgba(53, 53, 53, 0.5);
+}
+
+.main {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    height: 700px;
+}
+
+.background-tint {
+    background-color: rgba(41, 45, 50, 0.85);
+    background-blend-mode: overlay;
+}
+
+.content {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+    width: 1000px;
+    height: 100%;
+}
+
+.menu {
+    width: 400px;
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 25px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-section {
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+    padding-left: 10%;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.danger {
+    border-color: #EC5D5D;
+    color: #EC5D5D;
+}
+
+.danger:hover {
+    background: #EC5D5D;
+    color: white;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+input.nosubmit {
+    border: 1px solid #555;
+    width: 100%;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    background-color: white;
+}
+
+.apply-btn {
+    width: 200px;
+    height: 40px;
+    background-color: #EC5D5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+    .apply-btn:hover {
+        background-color: #CE3A3A;
+    }
+
+    .apply-btn:active {
+        background-color: #9F2020;
+    }
