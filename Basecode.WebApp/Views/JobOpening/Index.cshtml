@@ -1,4 +1,4 @@
-﻿@using Basecode.Data.Models;
+@using Basecode.Data.Models;
 @using Basecode.Data.ViewModels
 @model List<JobOpeningViewModel>
 @inject SignInManager<IdentityUser> signInManager;
@@ -9,8 +9,7 @@
 
 <link rel="stylesheet" href="~/css/jobOpening.css">
 
-<div class="background-tint"
-    style="padding: 0px; background-position: -250px -280px; background-image: url('https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1920/s3/img0mdgetufz');">
+<div class="background-tint">
 
     <div class="main">
         <!--Menu-->
@@ -122,31 +121,23 @@
                             @*(@ViewBag.ExpPairs[""+jobOpening.ExperienceLevelID])
                             @ViewBag.EmpPairs[""+jobOpening.EmploymentTypeID]*@
                             </p>
-                            <div style="background-color: #D9D9D9;
-                    border-radius: 10px;
-                    width: 150px;
-                    height: fit-content;
-                    padding: 2px;
-                    text-align: center;
-                    margin-bottom: 1rem;">
-                                <p style="color: white; font-size: 14px; margin-bottom: 0px;">Junior Level</p>
-                            </div>
                             <p style="color: #8C8C8C; font-size: 14px; overflow: hidden;">
                                     @jobOpening.Description
                             </p>
-                            <div style="display: grid; grid-auto-flow: column; margin-top: 40px;">
+                            <div style="display: grid; grid-auto-flow: column; margin-top: 15%;">
                                 <h3 class="header-text" style="font-weight: 700"></h3>
                                 <div style="padding-left: 77%;">
                                         @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-                                        {
-                                        <button style="border: 0px; background-color: white; margin-right: 10px;"
-                                            onclick="ConfirmDelete(@jobOpening.Id)">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                                class="bi bi-trash" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
-                                                <path
-                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                    {
+                                        <button style="border: 0px; background-color: white; margin-right: 10px; margin-left: 15px" onclick="ConfirmDelete(@jobOpening.Id)">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="30"
+                                                    height="30"
+                                                    fill="currentColor"
+                                                    class="bi bi-trash"
+                                                    viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                                             </svg>
                                         </button>
                                         <button style="border: 0px; background-color: white;"

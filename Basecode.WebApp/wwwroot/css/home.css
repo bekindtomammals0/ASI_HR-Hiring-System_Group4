@@ -16,7 +16,7 @@ html * {
     overflow: hidden;
     overflow-y: scroll;
     list-style-type: none;
-    height: 628px;
+    height: 97%;
     padding-left: 0px;
     border-radius: 15px;
 }
@@ -41,12 +41,15 @@ html * {
     display: grid;
     gap: 20px;
     grid-auto-flow: column;
-    height: 700px;
+    height: 800px;
 }
 
 .background-tint {
     background-color: rgba(41, 45, 50, 0.85);
     background-blend-mode: overlay;
+    padding: 0px;
+    background-position: -250px -280px;
+    background-image: url('https://dx5683gi1tv0w.cloudfront.net/dtrjyhj9q/image/upload/w_1920/s3/img0mdgetufz');
 }
 
 .content {
@@ -56,12 +59,12 @@ html * {
     width: 1000px;
     height: 93%;
     margin-top: 40px;
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .menu {
     width: 400px;
-    height: 90%;
+    height: 700px;
     border: 1px solid rgb(180, 180, 180);
     background-color: white;
     border-radius: 10px;
