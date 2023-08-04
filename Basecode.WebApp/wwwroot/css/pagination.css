@@ -1,4 +1,4 @@
-﻿.info-pagination, .status-pagination {
+﻿.info-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,14 +11,14 @@
     border-radius: 6px;
 }
 
-.info-pagination-list, .status-pagination-list {
+.info-pagination-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 10px;
 }
 
-    .info-pagination-list li, .status-pagination-list li {
+    .info-pagination-list li {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,12 +33,17 @@
         cursor: pointer;
     }
 
-        .info-pagination-list li.active, .status-pagination-list li.active {
+        .info-pagination-list li:hover {
             color: #fff;
-            background-image: linear-gradient(#ff4568, #ff4568);
+            background-image: linear-gradient(#ce3a3a, #ce3a3a);
         }
 
-.info-prev-btn, .info-next-btn, .status-prev-btn, .status-next-btn {
+        .info-pagination-list li.active {
+            color: #fff;
+            background-image: linear-gradient(#9f2020, #9f2020);
+        }
+
+#info-prev-btn, #info-next-btn {
     display: flex;
     justify-content: center;
     align-items: center;

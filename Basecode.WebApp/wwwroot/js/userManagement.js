@@ -66,21 +66,23 @@ const totalResults = table.rows.length - 1; // Excluding the header row
 
 // Function to display the items for the current page
 function showPage() {
-const startIndex = (currentPage - 1) * itemsPerPage;
-const endIndex = Math.min(startIndex + itemsPerPage, totalResults);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, totalResults);
 
-// Hide all rows in the table
-for (let i = 1; i < table.rows.length; i++) {
-    table.rows[i].style.display = "none";
-}
+    // Hide all rows in the table
+    for (let i = 1; i < table.rows.length; i++) {
+        table.rows[i].style.display = "none";
+    }
 
-// Show the rows for the current page
-for (let i = startIndex + 1; i <= endIndex; i++) {
-    table.rows[i].style.display = "table-row";
-}
+    // Show the rows for the current page
+    for (let i = startIndex + 1; i <= endIndex; i++) {
+        table.rows[i].style.display = "table-row";
+    }
 
-// Update the "Showing X-Y of Z results" message
-    pageInfo.textContent = `Showing ${startIndex + 1}-${endIndex} of ${totalResults} results`;
+    // Update the "Showing X-Y of Z results" message
+    pageInfo.textContent = `Showing ${
+        startIndex + 1
+    }-${endIndex} of ${totalResults} results`;
 }
 
 // Function to handle the previous button click
@@ -93,7 +95,7 @@ prevButton.addEventListener("click", () => {
 
 // Function to handle the next button click
 nextButton.addEventListener("click", () => {
-const lastPage = Math.ceil(totalResults / itemsPerPage);
+    const lastPage = Math.ceil(totalResults / itemsPerPage);
     if (currentPage < lastPage) {
         currentPage++;
         showPage();

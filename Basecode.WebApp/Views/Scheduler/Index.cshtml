@@ -46,132 +46,129 @@
             <input type="date" id="to" name="to">
         </form>
     </div>
+
     <div class="applicant-container">
         <div class="applicant-header">
             <p class="applicant-title"> Job Applicants </p>
             <form>
-                <input type="text" placeholder="Search applicants.." name="search" class="searchbar">
+                <input type="text" placeholder="Search applicants.." name="search" class="searchbar" id="searchInput">
             </form>
         </div>
         <div class="applicant-table">
             <table id="applicant-info">
-                <tr>
+                <tr id="header-row">
                     <th>Date Applied</th>
                     <th>Applicant Name</th>
                     <th>Job Title</th>
+                    <th>Scheduled Date</th>
+                    <th>Status</th>
                     <th>Applicant Details</th>
                 </tr>
                 <tr>
-                    <td>June 19, 2023</td>
-                    <td>Applicant No. 1</td>
+                    <td>06/19/2023</td>
+                    <td>Ran Takahashi</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>06/26/2023</td>
+                    <td>For Final Interview</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 20, 2023</td>
-                    <td>Applicant No. 2</td>
+                    <td>06/20/2023</td>
+                    <td>Yuki Ishikawa</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>N/A</td>
+                    <td>For Technical Exam</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 21, 2023</td>
-                    <td>Applicant No. 3</td>
+                    <td>06/21/2023</td>
+                    <td>Yuji Nishida</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>06/28/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 22, 2023</td>
-                    <td>Applicant No. 4</td>
+                    <td>06/22/2023</td>
+                    <td>Kento Miyaura</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>06/29/2023</td>
+                    <td>For Screening</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 23, 2023</td>
-                    <td>Applicant No. 5</td>
+                    <td>06/23/2023</td>
+                    <td>Akihiro Yamauchi</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>06/30/2023</td>
+                    <td>Onboarding</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 26, 2023</td>
-                    <td>Applicant No. 6</td>
+                    <td>06/26/2023</td>
+                    <td>Masahiro Yanagida</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>07/03/2023</td>
+                    <td>For HR Interview</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
                 <tr>
-                    <td>June 27, 2023</td>
-                    <td>Applicant No. 7</td>
+                    <td>06/27/2023</td>
+                    <td>Tomohiro Yamamoto</td>
                     <td>Sample Job Title</td>
-                    <td><button class="view-btn">View CV</button></td>
+                    <td>N/A</td>
+                    <td>For Technical Exam</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/28/2023</td>
+                    <td>Motoki Eiro</td>
+                    <td>Sample Job Title</td>
+                    <td>07/05/2023</td>
+                    <td>For Screening</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/29/2023</td>
+                    <td>Kentaro Takahashi</td>
+                    <td>Sample Job Title</td>
+                    <td>07/06/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Masahiro Sekita</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 11</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
+                </tr>
+                <tr>
+                    <td>06/30/2023</td>
+                    <td>Applicant No. 12</td>
+                    <td>Sample Job Title</td>
+                    <td>07/07/2023</td>
+                    <td>Deployed</td>
+                    <td><button class="view-btn" onclick="updateViewBtnText(this)">View CV</button></td>
                 </tr>
             </table>
             <div class="info-pagination">
-                <button class="info-prev-btn" onclick="infoPrevBtn()">prev</button>
+                <button id="info-prev-btn" onclick="infoPrevBtn()">prev</button>
                 <ul class="info-pagination-list">
                     <li class="info-link active" value="1" onclick="setInfoActiveLink()">1</li>
                     <li class="info-link" value="2" onclick="setInfoActiveLink()">2</li>
                     <li class="info-link" value="3" onclick="setInfoActiveLink()">3</li>
                 </ul>
-                <button class="info-next-btn" onclick="infoNextBtn()">next</button>
-            </div>
-
-            <table id="applicant-status">
-                <tr>
-                    <th>Date Applied</th>
-                    <th>Applicant Name</th>
-                    <th>Job Title</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>June 26, 2023</td>
-                    <td>Applicant No. 6</td>
-                    <td>Sample Job Title</td>
-                    <td>For Final Interview</td>
-                </tr>
-                <tr>
-                    <td>June 27, 2023</td>
-                    <td>Applicant No. 7</td>
-                    <td>Sample Job Title</td>
-                    <td>For Technical Exam</td>
-                </tr>
-                <tr>
-                    <td>June 28, 2023</td>
-                    <td>Applicant No. 8</td>
-                    <td>Sample Job Title</td>
-                    <td>Deployed</td>
-                </tr>
-                <tr>
-                    <td>June 29, 2023</td>
-                    <td>Applicant No. 9</td>
-                    <td>Sample Job Title</td>
-                    <td>For Screening</td>
-                </tr>
-                <tr>
-                    <td>June 30, 2023</td>
-                    <td>Applicant No. 10</td>
-                    <td>Sample Job Title</td>
-                    <td>Onboarding</td>
-                </tr>
-                <tr>
-                    <td>July 3, 2023</td>
-                    <td>Applicant No. 11</td>
-                    <td>Sample Job Title</td>
-                    <td>Onboarding</td>
-                </tr>
-                <tr>
-                    <td>July 4, 2023</td>
-                    <td>Applicant No. 12</td>
-                    <td>Sample Job Title</td>
-                    <td>Onboarding</td>
-                </tr>
-            </table>
-            <div class="status-pagination">
-                <button class="status-prev-btn" onclick="statusPrevBtn()">prev</button>
-                <ul class="status-pagination-list">
-                    <li class="status-link active" value="1" onclick="setStatusActiveLink()">1</li>
-                    <li class="status-link" value="2" onclick="setStatusActiveLink()">2</li>
-                    <li class="status-link" value="3" onclick="setStatusActiveLink()">3</li>
-                </ul>
-                <button class="status-next-btn" onclick="statusNextBtn()">next</button>
+                <button id="info-next-btn" onclick="infoNextBtn()">next</button>
             </div>
         </div>
     </div>
@@ -180,42 +177,19 @@
 <div id="modal-screen" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <p class="details">Applicant Details</p>
-            <p class="close">&times;</p>
+            <h1>Applicant</h1>
         </div>
-        <form action="#">
-            <div class="input-field">
-                <input type="text" required>
-                <label>Title</label>
-            </div>
-            <div class="input-field">
-                <input type="text" required>
-                <label>Description</label>
-            </div>
-            <div class="dropdown-field">
-                <select id="experiences" name="experiences">
-                    <option value="" disabled selected hidden>Required Experiences</option>
-                    <option>Entry-level</option>
-                    <option>Intermediate</option>
-                    <option>Mid-level</option>
-                    <option>Senior-level</option>
-                </select>
-            </div>
-            <div class="input-field">
-                <input type="text" required>
-                <label>Preferred Skills</label>
-            </div>
-            <div class="dropdown-field">
-                <select id="employment" name="employment">
-                    <option value="" disabled selected hidden>Employment Type</option>
-                    <option>Part-time Employment</option>
-                    <option>Full-time Employment</option>
-                    <option>Seasonal Employment</option>
-                    <option>Temporary Employment</option>
-                    <option>Leased Employment</option>
-                </select>
-            </div>
-        </form>
+        <div class="applicant-info">
+            <p id="applicant-name-label">Name:</p>
+            <p id="applicant-name">Barcenilla, Adrian Jay</p>
+            <p id="applicant-job-label">Job:</p>
+            <p id="applicant-job">Junior Engineer</p>
+        </div>
+        <div class="applicant-shortlist">
+            <p id="shortlist">Shortlist applicant?</p>
+            <button id="shortlist-btn">Yes, shortlist.</button>
+            <p id="return"><a class="nav-link text" asp-area="" asp-controller="Scheduler" asp-action="Index">Return</a></p>
+        </div>
     </div>
 </div>
 

@@ -8,39 +8,40 @@ using System.Collections.Specialized;
 
 namespace Basecode.WebApp.Controllers
 {
-    
+
     public class JobOpeningController : Controller
     {
         private readonly IJobOpeningService _service;
         private readonly ILookupService _lookupService;
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
-        public JobOpeningController(IJobOpeningService service, ILookupService lookupService) 
-        { 
+        public JobOpeningController(IJobOpeningService service, ILookupService lookupService)
+        {
             _service = service;
             _lookupService = lookupService;
         }
         [AllowAnonymous]
         public IActionResult Index()
         {
-            NameValueCollection ExpPairs = new System.Collections.Specialized.NameValueCollection();
-            foreach (var pair in _lookupService.GetExperienceLevels())
-            {
-                ExpPairs.Add("" + pair.Id, pair.Level);
-            }
-            NameValueCollection EmpPairs = new System.Collections.Specialized.NameValueCollection();
-            foreach (var pair in _lookupService.GetEmploymentTypes())
-            {
-                EmpPairs.Add("" + pair.Id, pair.Type);
-            }
-            ViewBag.ExpPairs = ExpPairs;
-            ViewBag.EmpPairs = EmpPairs;
+            // NameValueCollection ExpPairs = new System.Collections.Specialized.NameValueCollection();
+            // foreach (var pair in _lookupService.GetExperienceLevels())
+            // {
+            //     ExpPairs.Add("" + pair.Id, pair.Level);
+            // }
+            // ViewBag.ExpPairs = ExpPairs;
+            // NameValueCollection EmpPairs = new System.Collections.Specialized.NameValueCollection();
+            // foreach (var pair in _lookupService.GetEmploymentTypes())
+            // {
+            //     ExpPairs.Add("" + pair.Id, pair.Type);
+            // }
+            // ViewBag.ExpPairs = ExpPairs;
+            // ViewBag.EmpPairs = EmpPairs;
             ViewBag.ExperienceLevels = _lookupService.GetExperienceLevels();
             ViewBag.EmploymentTypes = _lookupService.GetEmploymentTypes();
             var data = _service.RetrieveAll();
             return View(data);
         }
-        public IActionResult AddView() 
+        public IActionResult AddView()
         {
             return View();
         }
@@ -56,8 +57,16 @@ namespace Basecode.WebApp.Controllers
         [HttpGet]
         public IActionResult Apply(int id)
         {
-            var data = _service.GetById(id);
-            return View(data);
+            JobOpeningViewModel jobOpeningViewModel = _service.GetById(id);
+            JobOpening jobOpening = new JobOpening
+            {
+                Title = jobOpeningViewModel.Title,
+                Description = jobOpeningViewModel.Description,
+                ExperienceLevelID = jobOpeningViewModel.ExperienceLevelID,
+                EmploymentTypeID = jobOpeningViewModel.EmploymentTypeID
+            };
+            ViewData["JobOpeningData"] = jobOpening;
+            return View("~/Views/ApplicationForm/Index", ViewData["JobOpeningData"]);
         }
         [HttpGet]
         public IActionResult UpdateView(int id)
@@ -89,9 +98,13 @@ namespace Basecode.WebApp.Controllers
         public IActionResult PartialUpdate(int id)
         {
             JobOpeningViewModel jobOpeningViewModel = _service.GetById(id);
-            JobOpening jobOpening = new JobOpening { Title = jobOpeningViewModel.Title, Description = jobOpeningViewModel.Description
-                                                , ExperienceLevelID = jobOpeningViewModel.ExperienceLevelID, 
-                                                    EmploymentTypeID = jobOpeningViewModel.EmploymentTypeID};
+            JobOpening jobOpening = new JobOpening
+            {
+                Title = jobOpeningViewModel.Title,
+                Description = jobOpeningViewModel.Description,
+                ExperienceLevelID = jobOpeningViewModel.ExperienceLevelID,
+                EmploymentTypeID = jobOpeningViewModel.EmploymentTypeID
+            };
             return PartialView("UpdateView", jobOpening);
         }
     }
